@@ -185,6 +185,20 @@ background-color: #000;
     vertical-align: top;
     border-top: 1px solid #dee2e6;
 }
+.carousel-control-prev{
+    background-color: transparent;
+}
+
+.carousel-control-next{
+     background-color: transparent;
+    float: right;
+}
+.carousel-control-next-icon{
+    background-color: #000;
+}
+.carousel-control-prev-icon{
+background-color: #000;
+}
 @media screen and (min-width:769px){
     .dropend:hover > .dropdown-menu{
         position: absolute;
