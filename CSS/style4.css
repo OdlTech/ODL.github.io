@@ -189,14 +189,14 @@ background-color: #000;
     background-color: transparent;
 }
 
-.carousel-control-next-icon{
+.carousel-control-next{
      background-color: transparent;
     float: right;
 }
-.carousel-control-next-icon{
+.carousel-control-next{
     background-color: #000;
 }
-.carousel-control-prev-icon{
+.carousel-control-prev{
 background-color: #000;
 }
 @media screen and (min-width:769px){
