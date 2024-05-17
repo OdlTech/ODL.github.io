@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+    }
+    .cal{
+        width: 100%;
+        height: 100vh;
+        background-color: linear-gradent(45deg, #6ac16a, #bda5bd);
+        position: relative;
+    }
+    #calendar{
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+</style>
+<link rel="stylesheet" href="css/evo-calendar.min.css">
+<link rel="stylesheet" href="css/evo-calendar.midnight-blue.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cal">
+        <div id="calendar"></div>
+
+
+    </div>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="js/evo-calendar.min.js"></script>
+<script>
+    $(document).ready(function() {
+    $('#calendar').evoCalendar({
+
+        theme: "Midnight Blue",
+        calendarEvents: [
+      // {
+      //   id: 'event1', // Event's ID (required)
+      //   name: "1st day of Exam ", // Event name (required)
+      //   date: "December/02/2023", // Event date (required)
+      //   description:"<ul><li>CE922</li>,<li>CS973</li>,<li>EE910</li>,<li>EE924</li></ul>",
+      //   type: "Exam_day1", // Event type (required)
+      //   everyYear: true // Same event every year (optional)
+      // },
+      // {
+      //   id: 'event2', // Event's ID (required)
+      //   name: "2nd day of Exam ", // Event name (required)
+      //   date: "December/03/2023", // Event date (required)
+      //   description:"<ul><li>CE923</li>,<li>CS981</li>,<li>ECO904</li>,<li>ECO915</li>,<li>ECO916</li>,<li>EE909</li>,<li>EE925</li>,<li>MBA904</li>,<li>MBA905</li>,<li>MBA934</li>,<li>MBA974</li>,,<li>MBA938</li>,,<li>MBA961</li></ul>",
+      //   type: "Exam_day1", // Event type (required)
+      //   everyYear: true // Same event every year (optional)
+      // },
+      // {
+      //   id: 'event3', // Event's ID (required)
+      //   name: "3rd day of Exam ", // Event name (required)
+      //   date: "December/09/2023", // Event date (required)
+      //   description:"<ul><li>CE921</li>,<li>CS987</li>,<li>ECO905</li>,<li>ECO912</li>,<li>MBA935</li>,<li>MBA976</li>,<li>MBA980</li>,<li>MBA962</li></ul>",
+      //   type: "Exam_day1", // Event type (required)
+      //   everyYear: true // Same event every year (optional)
+      // },
+      // {
+      //   id: 'event4', // Event's ID (required)
+      //   name: "4th day of Exam ", // Event name (required)
+      //   date: "December/10/2023", // Event date (required)
+      //   description:"<ul><li>CS989</li>,<li>ECO907</li>,<li>ECO909</li>,<li>ECO910</li>,<li>EE912</li>,<li>EE930</li>,<li>MBA906</li>,<li>MBA936</li>,<li>MBA942</li>,<li>MBA975</li>,<li>MBA981</li>,<li>MBA960</li></ul>",
+      //   type: "Exam_day1", // Event type (required)
+      //   everyYear: true // Same event every year (optional)
+      // },
+      // {
+      //   id: 'event5', // Event's ID (required)
+      //   name: "Gazatted Holiday ", // Event name (required)
+      //   date: "December/25/2023", // Event date (required)
+      //   description:"Christmas",
+      //   type: "Exam_day1", // Event type (required)
+      //   everyYear: true // Same event every year (optional)
+      // },
+      // {
+      //   id: 'event6', // Event's ID (required)
+      //   name: "Restricted Holiday ", // Event name (required)
+      //   date: "December/24/2023", // Event date (required)
+      //   description:"Christmas Eve",
+      //   type: "Exam_day1", // Event type (required)
+      //   everyYear: true // Same event every year (optional)
+      // },
+      // {
+      //   id: 'event7', // Event's ID (required)
+      //   name: "Grade Submission ", // Event name (required)
+      //   date: "December/13/2023", // Event date (required)
+      //   description:"last date of grade submission",
+      //   type: "Exam_day1", // Event type (required)
+      //   everyYear: true // Same event every year (optional)
+      // },
+
+      {
+        name: "Pre Registration ",
+        badge: "12/02/24 - 07/03/24", // Event badge (optional)
+        date: ["12 Feb, 2024", "07 Mar, 2024"], // Date range
+        description: "Pre Registration (Q3-204)", // Event description (optional)
+        type: "event",
+        color: "#63d867" // Event custom color (optional)
+      },
+      {
+        name: "Placement ",
+        badge: "12/02/24 - 24/03/24", // Event badge (optional)
+        date: ["12 Feb, 2024", "24 Mar, 2024"], // Date range
+        description: "Student Placement Registration (Q3-2024) ", // Event description (optional)
+        type: "event",
+        color: "#63d867" // Event custom color (optional)
+      },
+      {
+        name: "Pre Registration ",
+        badge: "06/05/24 - 30/05/24", // Event badge (optional)
+        date: ["06 May, 2024", "30 May, 2024"], // Date range
+        description: "Pre Registration (Q4-204)", // Event description (optional)
+        type: "event",
+        color: "#63d867" // Event custom color (optional)
+      },
+      {
+        name: "Placement ",
+        badge: "06/05/24 - 16/06/24", // Event badge (optional)
+        date: ["06 May, 2024", "16 Jun, 2024"], // Date range
+        description: "Student Placement Registration (Q4-2024) ", // Event description (optional)
+        type: "event",
+        color: "#63d867" // Event custom color (optional)
+      },
+      // {
+      //   id: 'event8', // Event's ID (required)
+      //   name: "COhort 5 Qaurter 3 class start ", // Event name (required)
+      //   date: "January/08/2023", // Event date (required)
+      //   description:"last date od grade submission",
+      //   type: "Exam_day1", // Event type (required)
+      //   everyYear: true // Same event every year (optional)
+      // },
+    ] 
+    })
+})
+
+
+</script>
+</body>
+</html>
