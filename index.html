@@ -432,14 +432,37 @@
                 </div>
                 <div class="col-sm-6">
                   <div class="card">
-                    <img src="img/PICDL's Message.jpg" class="img-fluid" alt="PICDL_MSG" style="max-width: 100%; height: 55vh; ">
-                        
+				  <img id="clickable-image-1" src="img/PICDL's Message.jpg" class="img-fluid" style="height: 55vh;max-width: 100%;" data-bs-toggle="modal" data-bs-target="#imageModal1"> 
+           
                   </div>
                 </div>
               </div>
             
         </div>
     </div>
+<!-- Modal -->
+<div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="imageModalLabel">PICDL's Message</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="" class="img-fluid" id="enlarged-image1">
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<script>
+document.querySelectorAll('[id^="clickable-image"]').forEach(img => {
+    img.addEventListener('click', function() {
+        const src = this.src;
+        document.getElementById('enlarged-image1').src = src;
+    });
+});
+</script>
 
     <div><br><br></div>
      <!--pre Footer -->
