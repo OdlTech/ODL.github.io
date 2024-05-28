@@ -5,13 +5,12 @@ html, body {
 }
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    text-decoration-color: black;
-    color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ font-weight: 400;
+  color: black;
 }
 
 .dropdown .dropdown-menu{
