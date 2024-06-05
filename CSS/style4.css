@@ -277,14 +277,14 @@ background-color: #000;
   /* TIMELINE
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .horizontal-timeline .items {
-    border-top: 3px solid #e9ecef;
+    border-top: 3px solid rgb(4, 89, 169);
   }
   
   .horizontal-timeline .items .items-list {
     display: block;
     position: relative;
     text-align: center;
-    padding-top: 70px;
+    padding-top: 30px;
     margin-right: 0;
   }
   
@@ -292,13 +292,13 @@ background-color: #000;
     content: "";
     position: absolute;
     height: 36px;
-    border-right: 2px dashed #dee2e6;
+    border-right: 2px dashed rgb(4, 89, 169);
     top: 0;
   }
   
   .horizontal-timeline .items .items-list .event-date {
     position: absolute;
-    top: 36px;
+    top: 20px;
     left: 0;
     right: 0;
     width: 75px;
@@ -311,7 +311,7 @@ background-color: #000;
     .horizontal-timeline .items .items-list {
       display: inline-block;
       width: 24%;
-      padding-top: 45px;
+      padding-top: 50px;
     }
   
     .horizontal-timeline .items .items-list .event-date {
