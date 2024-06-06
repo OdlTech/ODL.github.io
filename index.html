@@ -701,83 +701,119 @@ document.querySelectorAll('[id^="clickable-image"]').forEach(img => {
     
        
     <br><br><br>
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Enrollment Bar Graph</title>
-      <!-- Bootstrap CSS -->
-      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-      <!-- Chart.js Library -->
-      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  </head>
-  <body>
-  
-  <div class="container mt-5">
-      <h2 class="text-center">Number of Enrolled Students in Each Programme by Cohort</h2>
-      <canvas id="enrollmentChart"></canvas>
-  </div>
-  
-  <script>
-      var ctx = document.getElementById('enrollmentChart').getContext('2d');
-      var enrollmentChart = new Chart(ctx, {
-          type: 'bar',
-          data: {
-              labels: [
-                  "CS", "QFRM", "PSREM", "Cyber Security (CS)", 
-                  "DSBA", "FTM", "Business Finance", "Financial Analysis", 
-                  "Public Policy", "SCPM"
-              ],
-              datasets: [
-                  {
-                      label: 'Cohort 1 (Jan 2022)',
-                      data: [27, 23, 42, 66, 0, 0, 0, 0, 0, 0],
-                      backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                      borderColor: 'rgba(255, 99, 132, 1)',
-                      borderWidth: 1
-                  },
-                  {
-                      label: 'Cohort 2 (Jul 2022)',
-                      data: [23, 36, 0, 0, 0, 0, 0, 0, 0, 0],
-                      backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                      borderColor: 'rgba(54, 162, 235, 1)',
-                      borderWidth: 1
-                  },
-                  {
-                      label: 'Cohort 3 (Jan 2023)',
-                      data: [20, 0, 32, 69, 24, 46, 10, 12, 23, 0],
-                      backgroundColor: 'rgba(255, 206, 86, 0.2)',
-                      borderColor: 'rgba(255, 206, 86, 1)',
-                      borderWidth: 1
-                  },
-                  {
-                      label: 'Cohort 4 (Jul 2023)',
-                      data: [9, 29, 0, 0, 41, 34, 11, 15, 9, 28],
-                      backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                      borderColor: 'rgba(75, 192, 192, 1)',
-                      borderWidth: 1
-                  }
-              ]
-          },
-          options: {
-              scales: {
-                  y: {
-                      beginAtZero: true
-                  }
-              },
-              responsive: true,
-              plugins: {
-                  legend: {
-                      position: 'top',
-                  },
-                  title: {
-                      display: true,
-                      text: 'Number of Enrolled Students in Each Programme by Cohort'
-                  }
-              }
-          }
-      });
-  </script>
-  <br><br>    
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment Bar Graph</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Chart.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="text-center">Number of Enrolled Students in Each Programme by Cohort</h2>
+    <canvas id="enrollmentChart"></canvas>
+</div>
+
+<script>
+    var ctx = document.getElementById('enrollmentChart').getContext('2d');
+
+    var data = {
+        labels: [
+            "CS", "QFRM", "PSREM", "Cyber Security (CS)", 
+            "DSBA", "FTM", "BFPP", "SCPM"
+        ],
+        datasets: [
+            {
+                label: 'Cohort 1 (Jan 2022)',
+                data: [27, 23, 42, 66, 0.001, 0.001, 0.001, 0.001],
+                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                borderColor: 'rgba(255, 99, 132, 1)',
+                borderWidth: 1
+            },
+            {
+                label: 'Cohort 2 (Jul 2022)',
+                data: [23, 36, 0.001, 0.001, 0.001, 0.001, 0.001, 0.001],
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+                borderWidth: 1
+            },
+            {
+                label: 'Cohort 3 (Jan 2023)',
+                data: [20, 0.001, 32, 69, 24, 46, 45, 0.001],
+                backgroundColor: 'rgba(255, 206, 86, 0.2)',
+                borderColor: 'rgba(255, 206, 86, 1)',
+                borderWidth: 1
+            },
+            {
+                label: 'Cohort 4 (Jul 2023)',
+                data: [9, 29, 0.001, 0.001, 41, 34, 35, 28],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }
+        ]
+    };
+
+    var options = {
+        scales: {
+            x: {
+                stacked: false,
+                categoryPercentage: 2.2, // Increase this to add gap between programs
+                barPercentage: 0.2 // Decrease this to ensure bars are narrower
+            },
+            y: {
+                beginAtZero: true
+            }
+        },
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top',
+            },
+            title: {
+                display: true,
+                text: 'Number of Enrolled Students in Each Programme by Cohort'
+            },
+            tooltip: {
+                callbacks: {
+                    label: function(context) {
+                        var label = context.dataset.label || '';
+                        var value = context.raw;
+                        if (value === 0.001) {
+                            label += ': Programme was not launched';
+                        } else {
+                            label += ': ' + value;
+                        }
+                        return label;
+                    }
+                }
+            }
+        }
+    };
+
+    var enrollmentChart = new Chart(ctx, {
+        type: 'bar',
+        data: data,
+        options: options
+    });
+</script>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+
+
+<br><br>       
   
         
 
