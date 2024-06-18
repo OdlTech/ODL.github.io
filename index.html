@@ -457,9 +457,9 @@ document.querySelectorAll('[id^="clickable-image"]').forEach(img => {
                   <li class="list-inline-item items-list">
                     <div class="px-4">
                       <div class="event-date badge rounded-pill bg-info"></div>
-                      <h4 class="pt-2"style="margin-top:20px;">Companies Sponsering Students </h4>
+                      <h5 class="pt-2"style="margin-top:20px;">Companies Sponsering Students </h5>
                       <p class="text-muted">
-                        <img class="img-fluid" src="img/Associated Companies (1).jpg">
+					   <img id="clickable-image-3" src="img/Associated Companies (1).jpg" class="img-fluid" style="max-height:130px;" data-bs-toggle="modal" data-bs-target="#imageModal20"> 
                       </p>
                       
                     </div>
@@ -467,9 +467,10 @@ document.querySelectorAll('[id^="clickable-image"]').forEach(img => {
                   <li class="list-inline-item items-list">
                     <div class="px-4">
                       <div class="event-date badge rounded-pill bg-info"></div>
-                      <h4 class="pt-2"style="margin-top:20px;">Student Profile: Education-wise</h4>
+                      <h5 class="pt-2"style="margin-top:20px;">Student Profile: Education-wise</h5>
                       <p class="text-muted">
-                        <img class="img-fluid" src="img/Associated Companies (1).jpg">
+					 <img id="clickable-image-4" src="img/EDUCATION.jpg" class="img-fluid" style="max-height:130px;"data-bs-toggle="modal" data-bs-target="#imageModal20"> 
+                      
                       </p>
                       
                     </div>
@@ -477,9 +478,10 @@ document.querySelectorAll('[id^="clickable-image"]').forEach(img => {
                   <li class="list-inline-item items-list">
                     <div class="px-4">
                       <div class="event-date badge rounded-pill bg-info"></div>
-                      <h4 class="pt-2"style="margin-top:20px;">Student Profile: Experience-wise </h4>
+                      <h5 class="pt-2"style="margin-top:20px;">Student Profile: Experience-wise </h5>
                       <p class="text-muted">
-                        <img class="img-fluid" src="img/Associated Companies (1).jpg">
+                         <img id="clickable-image-5" src="img/Work_Exp.jpg" class="img-fluid"  style="max-height:130px;"data-bs-toggle="modal" data-bs-target="#imageModal20"> 
+                    
                       </p>
                       
                     </div>
@@ -487,9 +489,10 @@ document.querySelectorAll('[id^="clickable-image"]').forEach(img => {
                   <li class="list-inline-item items-list">
                     <div class="px-4">
                       <div class="event-date badge rounded-pill bg-info"></div>
-                      <h4 class="pt-2"style="margin-top:20px;">Students are from  companies</h4>
+                      <h5 class="pt-2"style="margin-top:20px;">Students are from companies:</h5>
                       <p class="text-muted">
-                        <img class="img-fluid" src="img/Associated Companies (1).jpg">
+                        <img id="clickable-image-6" src="img/students_are_from_these_companies.webp" style="max-height:130px;"class="img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal20"> 
+                    
                       </p>
                       
                     </div>
@@ -501,8 +504,30 @@ document.querySelectorAll('[id^="clickable-image"]').forEach(img => {
         
             </div>
           </div>
-        
-        </div>
+       </div>
+<!-- Modal -->
+<div class="modal fade" id="imageModal20" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+        <img src="" class="img-fluid" id="enlarged-image20">
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<script>
+document.querySelectorAll('[id^="clickable-image"]').forEach(img => {
+    img.addEventListener('click', function() {
+        const src = this.src;
+        document.getElementById('enlarged-image20').src = src;
+    });
+});
+</script>
+</div> 
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 
      
      <div>
