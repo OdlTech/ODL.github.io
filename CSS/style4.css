@@ -277,7 +277,7 @@ background-color: #000;
   /* TIMELINE
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .horizontal-timeline .items {
-    border-top: 3px solid rgb(4, 89, 169);
+    border-top: 4px solid rgb(4, 89, 169);
   }
   
   .horizontal-timeline .items .items-list {
@@ -311,7 +311,7 @@ background-color: #000;
     .horizontal-timeline .items .items-list {
       display: inline-block;
       width: 24%;
-      padding-top: 50px;
+      padding-top: 10px;
     }
   
     .horizontal-timeline .items .items-list .event-date {
