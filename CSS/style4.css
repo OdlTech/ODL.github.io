@@ -322,3 +322,22 @@ background-color: #000;
 }
 
   }
+   /* PICDL message and annual report section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .card, .card2 {
+    height: 100%;
+}
+.row-equal-height {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-equal-height {
+    display: flex;
+    flex-direction: column;
+}
+.card-body {
+    flex: 1;
+}
+.alert {
+    margin-bottom: 1rem; /* Added margin to ensure spacing between alerts */
+}
