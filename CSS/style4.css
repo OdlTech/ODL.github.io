@@ -9,17 +9,19 @@ html, body {
   padding: 0;
   box-sizing: border-box;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
- font-weight: 400;
+  font-weight: 400;
   color: black;
 }
 
 .dropdown .dropdown-menu{
     display: none;
+   
 }
 .dropdown:hover > .dropdown-menu, .dropend:hover > .dropdown-menu{
     display: block; 
     margin-top: .125em;
     margin-left: .125em;
+    transition-duration: 1s;/* time of hover*/
 }
 
 @media screen and (min-width:769px){
