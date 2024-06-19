@@ -15,7 +15,7 @@ html, body {
 
 .dropdown .dropdown-menu{
     display: none;
-    color: #000;
+    width: max-content;
    
 }
 .dropdown:hover > .dropdown-menu, .dropend:hover > .dropdown-menu{
