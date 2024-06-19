@@ -15,6 +15,7 @@ html, body {
 
 .dropdown .dropdown-menu{
     display: none;
+    color: #000;
    
 }
 .dropdown:hover > .dropdown-menu, .dropend:hover > .dropdown-menu{
