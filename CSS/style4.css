@@ -9,17 +9,23 @@ html, body {
   padding: 0;
   box-sizing: border-box;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
- font-weight: 400;
+  font-weight: 400;
   color: black;
 }
 
 .dropdown .dropdown-menu{
     display: none;
+    width: max-content;
+   
 }
 .dropdown:hover > .dropdown-menu, .dropend:hover > .dropdown-menu{
     display: block; 
     margin-top: .125em;
     margin-left: .125em;
+    transition: opacity 0.3s ease-in-out;
+    transition-duration: 2s;/* time of hover*/
+    min-width: 100%;
+    padding-right: 10px;
 }
 
 @media screen and (min-width:769px){
@@ -277,7 +283,7 @@ background-color: #000;
   /* TIMELINE
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .horizontal-timeline .items {
-    border-top: 3px solid rgb(4, 89, 169);
+    border-top: 4px solid rgb(4, 89, 169);
   }
   
   .horizontal-timeline .items .items-list {
@@ -311,7 +317,7 @@ background-color: #000;
     .horizontal-timeline .items .items-list {
       display: inline-block;
       width: 24%;
-      padding-top: 50px;
+      padding-top: 10px;
     }
   
     .horizontal-timeline .items .items-list .event-date {
@@ -319,3 +325,22 @@ background-color: #000;
 }
 
   }
+   /* PICDL message and annual report section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .card, .card2 {
+    height: 100%;
+}
+.row-equal-height {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-equal-height {
+    display: flex;
+    flex-direction: column;
+}
+.card-body {
+    flex: 1;
+}
+.alert {
+    margin-bottom: 1rem; /* Added margin to ensure spacing between alerts */
+}
