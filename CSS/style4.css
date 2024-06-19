@@ -24,6 +24,7 @@ html, body {
     margin-left: .125em;
     transition: opacity 0.3s ease-in-out;
     transition-duration: 2s;/* time of hover*/
+    min-width: 100%;
 }
 
 @media screen and (min-width:769px){
