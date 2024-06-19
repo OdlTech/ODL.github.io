@@ -15,13 +15,13 @@ html, body {
 
 .dropdown .dropdown-menu{
     display: none;
-    transition: opacity 0.3s ease-in-out; /* time in hover*/
+   
 }
 .dropdown:hover > .dropdown-menu, .dropend:hover > .dropdown-menu{
     display: block; 
     margin-top: .125em;
     margin-left: .125em;
-    transition-duration: 0.5s;/* time of hover*/
+    transition-duration: 1s;/* time of hover*/
 }
 
 @media screen and (min-width:769px){
