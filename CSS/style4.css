@@ -37,7 +37,27 @@ html, body {
     }
 }
 
+/* Footer
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .container-fluid.footer {
+    background-color: #DFDFDF;
+}
 
+/* Input styles */
+.contact-inputs {
+    width: 250px;
+    height: 30px;
+}
+
+.contact-inputs[type="textarea"] {
+    height: 50px;
+}
+
+/* Button styles */
+.btn-success.btn-block {
+    background-color: rgb(105, 188, 209);
+    color:#000;
+}
 
 /*Image -slider*/
 
