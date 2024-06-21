@@ -85,7 +85,25 @@ html, body {
     text-decoration: none;
     color: inherit;
   }
+/* Programmes page
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .card-custom {
+    background-color: #b3cde5;
+}
 
+.accordion-button-custom {
+    background-color: rgb(238, 247, 248);
+}
+.custom-card-bg {
+    background-color: #b3cde5;
+}
+
+.custom-button-bg {
+    background-color: rgb(238, 247, 248);
+}
+.custom-background {
+    background-color: rgb(238, 247, 248);
+  }
 /*Image -slider*/
 
 .carousel-control-prev{
