@@ -96,11 +96,11 @@ html, body {
 /* Apply the styles */
 .heading-color {
     color: var(--main-heading-color);
+    font-size:37px;
+    text-justify: auto;
 }
 
-.margin-left {
-    margin-left: -0.5rem;
-}
+
 
 .btn-custom {
     background-color: var(--btn-background-color);
