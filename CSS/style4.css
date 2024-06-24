@@ -55,8 +55,8 @@ html, body {
 
 /* Button styles */
 .btn-success.btn-block {
-    background-color: rgb(105, 188, 209);
-    color:#000;
+    background-color: rgb(4, 89, 169);
+    color:White;
 }
 /* Marquee
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -89,7 +89,7 @@ html, body {
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   :root {
     --main-heading-color: rgb(4, 89, 169);
-    --btn-background-color: rgb(20, 85, 7);
+    --btn-background-color: rgb(4, 89, 169);
     --btn-text-color: white;
 }
 
