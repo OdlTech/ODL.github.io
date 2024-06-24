@@ -90,7 +90,6 @@ html, body {
   .card-custom {
     background-color: #b3cde5;
 }
-
 .accordion-button-custom {
     background-color: rgb(238, 247, 248);
 }
@@ -104,6 +103,7 @@ html, body {
 .custom-background {
     background-color: rgb(238, 247, 248);
   }
+  
 /*Image -slider*/
 
 .carousel-control-prev{
