@@ -87,9 +87,30 @@ html, body {
   }
 /* Programmes page
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  :root {
+    --main-heading-color: rgb(4, 89, 169);
+    --btn-background-color: rgb(20, 85, 7);
+    --btn-text-color: white;
+}
+
+/* Apply the styles */
+.heading-color {
+    color: var(--main-heading-color);
+}
+
+.margin-left {
+    margin-left: -95px;
+}
+
+.btn-custom {
+    background-color: var(--btn-background-color);
+    color: var(--btn-text-color);
+    margin-right: -80px;
+}
   .card-custom {
     background-color: #b3cde5;
 }
+
 .accordion-button-custom {
     background-color: rgb(238, 247, 248);
 }
@@ -103,7 +124,28 @@ html, body {
 .custom-background {
     background-color: rgb(238, 247, 248);
   }
-  
+
+
+.icon-container {
+    padding: 20px; /* You can customize this value if needed */
+}
+
+.icon-color {
+    color: rgb(4, 89, 169);
+}
+
+.custom-button {
+    margin-left: -70px; /* Customize based on your button placement needs */
+    margin-top: 10px;
+}
+
+.custom-button:nth-child(3) {
+    margin-left: -40px;
+}
+
+.btn:hover {
+    background-color: #b3cde5 !important;
+}
 /*Image -slider*/
 
 .carousel-control-prev{
