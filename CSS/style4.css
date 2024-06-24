@@ -96,8 +96,8 @@ html, body {
 /* Apply the styles */
 .heading-color {
     color: var(--main-heading-color);
-    font-size:37px;
-    text-justify: auto;
+    font-size:34px;
+    font-weight: bold;
 }
 
 
