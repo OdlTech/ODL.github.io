@@ -87,6 +87,8 @@ html, body {
   }
 /* Programmes page
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  /* Progrmme header
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
   :root {
     --main-heading-color: rgb(4, 89, 169);
     --btn-background-color: rgb(4, 89, 169);
@@ -107,6 +109,8 @@ html, body {
     color: var(--btn-text-color);
     margin-right: -80px;
 }
+  /* Progrmme accordians
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .card-custom {
     background-color: #b3cde5;
 }
@@ -125,7 +129,10 @@ html, body {
     background-color: rgb(238, 247, 248);
   }
 
-
+/* Progrmme student profiles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  
+/* Custom CSS for responsive layout */
 .icon-container {
     padding: 20px; /* You can customize this value if needed */
 }
@@ -146,6 +153,35 @@ html, body {
 .btn:hover {
     background-color: #b3cde5 !important;
 }
+
+/* Additional customizations for responsiveness */
+@media (max-width: 768px) {
+    .icon-container {
+        padding: 10px; /* Adjust for smaller screens */
+    }
+    
+    .custom-button {
+        margin-left: 0; /* Reset margin for smaller screens */
+        margin-top: 20px; /* Adjust margin-top for smaller screens */
+    }
+
+    .custom-button:nth-child(3) {
+        margin-left: 0; /* Reset margin for the third button on smaller screens */
+    }
+}
+
+/* Progrmme BFPP buttons
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .custom-card {
+    border-radius: 8px;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  
+  .custom-header {
+    background-color: #b3cde5;
+  }
+  
 /*Image -slider*/
 
 .carousel-control-prev{
