@@ -487,3 +487,14 @@ background-color: #000;
 .alert {
     margin-bottom: 1rem; /* Added margin to ensure spacing between alerts */
 }
+/* Gallery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .heading {
+    color: black;
+  }
+  
+  .clickable-image {
+    height: 200px;
+    width: 100%;
+  }
+  
