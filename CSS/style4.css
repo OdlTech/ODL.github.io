@@ -182,7 +182,7 @@ html, body {
     background-color: #b3cde5;
   }
   
-/*Image -slider*/
+/*Image -slider-------------------------------*/
 
 .carousel-control-prev{
     background-color: transparent;
@@ -489,12 +489,23 @@ background-color: #000;
 }
 /* Gallery
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  .heading {
+  .gallery-container {
+    text-align: center;
+}
+
+.gallery-container h2 {
     color: black;
-  }
-  
-  .clickable-image {
+}
+
+.gallery-container .img-fluid {
     height: 200px;
     width: 100%;
-  }
-  
+}
+
+.gallery-container .modal-title {
+    font-weight: bold;
+}
+
+.gallery-container .modal-body img {
+    width: 100%;
+}
