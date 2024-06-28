@@ -489,24 +489,23 @@ background-color: #000;
 }
 /* Gallery
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  .container {
+  .gallery-container {
     text-align: center;
 }
 
-h2 {
+.gallery-container h2 {
     color: black;
 }
 
-.img-fluid {
+.gallery-container .img-fluid {
     height: 200px;
     width: 100%;
 }
 
-.modal-title {
+.gallery-container .modal-title {
     font-weight: bold;
 }
 
-.modal-body img {
+.gallery-container .modal-body img {
     width: 100%;
 }
-  
