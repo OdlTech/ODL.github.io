@@ -488,9 +488,12 @@ background-color: #000;
     margin-bottom: 1rem; /* Added margin to ensure spacing between alerts */
 }
 /* Gallery
+
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .gallery-container {
     text-align: center;
+    margin-left: 100px; /* Adjust the value as needed */
+    margin-right: 100px; /* Adjust the value as needed */
 }
 
 .gallery-container h2 {
