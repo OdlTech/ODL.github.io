@@ -22,8 +22,8 @@ html, body {
     display: block; 
     margin-top: .125em;
     margin-left: .125em;
-    transition: opacity 0.3s ease-in-out;
-    transition-duration: 2s;/* time of hover*/
+    transition: opacity 0.1s ease-in-out;
+    transition-duration: 8s;/* time of hover*/
     min-width: 100%;
     padding-right: 10px;
 }
