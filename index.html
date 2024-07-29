@@ -699,20 +699,34 @@ document.querySelectorAll('[id^="clickable-image"]').forEach(img => {
      <h4 style="color: black;"><center><B>Number of Enrolled Students in Each Programme by Cohort</B></center></h4>
 
      
-      <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Civil Engineering (CE)</button>
+      <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom1" aria-controls="offcanvasBottom1">Civil Engineering (CE)</button>
 
-      <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+      <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom1" aria-labelledby="offcanvasBottomLabel1">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasBottomLabel">SCPM</h5>
           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body small">
           <div class="card">
-            <img id="clickable-image-6" src="img/SCPM_graph.webp" class="img-fluid" style="height:250px; width:100%;" data-bs-toggle="modal" data-bs-target="#imageModal11"> 
+            <img id="clickable-image-6" src="img/SCPM_graph.webp" class="img-fluid" style="height:250px;" data-bs-toggle="modal" data-bs-target="#imageModal11"> 
         </div>
         </div>
       </div>
-      <button type="button" class="btn btn-outline-secondary">Secondary</button>
+
+      <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom2" aria-controls="offcanvasBottom1"> Computer Science and Engineering (CSE)</button>
+      
+      <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom2" aria-labelledby="offcanvasBottomLabel2">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasBottomLabel">SCPM</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small">
+          <div class="card">
+            <img id="clickable-image-1" src="img/CY_graph.webp" class="img-fluid" style="height:250px;" data-bs-toggle="modal" data-bs-target="#imageModal11"> 
+        </div>
+        </div>
+      </div>
+
       <button type="button" class="btn btn-outline-success">Success</button>
       <button type="button" class="btn btn-outline-danger">Danger</button>
       <button type="button" class="btn btn-outline-warning">Warning</button>
