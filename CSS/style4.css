@@ -512,3 +512,9 @@ background-color: #000;
 .gallery-container .modal-body img {
     width: 100%;
 }
+
+/* header sticky */
+.header.sticky{
+padding: 5px 100px;
+background: #fff;
+}
