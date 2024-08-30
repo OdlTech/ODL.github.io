@@ -2,6 +2,7 @@
 
 html, body {
     height: 100%;
+    position: sticky;
 }
 
 *{
@@ -22,8 +23,8 @@ html, body {
     display: block; 
     margin-top: .125em;
     margin-left: .125em;
-    transition: opacity 0.6s ease-in-out;
-    transition-duration: 20s;/* time of hover*/
+    transition: opacity 0.9s ease-in-out;
+    transition-duration: 60s;/* time of hover*/
     min-width: 100%;
     padding-right: 10px;
 }
