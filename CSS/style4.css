@@ -13,6 +13,26 @@ html, body {
   font-weight: 400;
   color: black;
 }
+/* logo and Navbar
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  @media (max-width: 767.98px) {
+    /* Target only the second logo */
+    .right-logo .logo img {
+        margin-left: 0 !important; /* Remove the large margin */
+        transform: translateX(70px); /* Shift only the right logo to the right */
+    }
+}
+/* Default margin-top for large screens */
+.navbar {
+    margin-top: 75px;
+  }
+  
+  /* Adjust margin-top for small screens */
+  @media (max-width: 768px) {
+    .navbar {
+      margin-top: 40px;
+    }
+  }
 
 .dropdown .dropdown-menu{
     display: none;
