@@ -388,7 +388,7 @@
     <div class="card-body">
       <div>
         <h2>
-          <center><b>Benifits</b></center>
+          <center><b>Benefits</b></center>
         </h2>
         <!-- <div>
           <div class="accordion-body">
@@ -402,142 +402,310 @@
 
 </div><br>
 <center>
-  <marquee>
+  
   <div class="container py-6">
     <div class="row g-4 justify-content-center">
+	
+      <!-- First Card with Modal -->
       <div class="col-md-3">
-        <div class="card">
-            <!-- <img src="img/Calender.jpg" class="card-img-top" style="max-height:10rem;width: 100px;" alt="..."> -->
-
-            <div class="card-body">
-              <p>GLOBAL ALUMNI NETWORK</p>
-              <P>Connect with alumni wordwide.<br> fostering global connections <br>and opportunities.</P>
-              
-            </div>
-          </a>
+        <div class="card" data-bs-toggle="modal" data-bs-target="#globalAlumniModal">
+          <div class="card-body">
+            <p>GLOBAL ALUMNI NETWORK</p>
+            <P>Connect with alumni worldwide.<br>Fostering global connections <br>and opportunities.</P>
+          </div>
         </div>
       </div>
-      <div class="col-md-3">
-        <div class="card">
-            <!-- <img src="img/Calender.jpg" class="card-img-top" style="max-height:10rem;width: 100px;" alt="..."> -->
+	  <!-- Modal for GLOBAL ALUMNI NETWORK -->
+<div class="modal fade" id="globalAlumniModal" tabindex="-1" aria-labelledby="globalAlumniModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="globalAlumniModalLabel">GLOBAL ALUMNI NETWORK</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Connect with alumni worldwide, fostering global connections and opportunities. Engage with a vast network of professionals from various fields and enhance your career prospects.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-            <div class="card-body">
-              <p>INSTITUTE-ALMUNI BRIDGE</p>
-              <P>Bridge the gap between the institute<br>and its graduates. facilitating<br>collaboration and communication</P>
-              
-            </div>
-          </a>
+       <!-- Second Card with Modal -->
+      <div class="col-md-3">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#instituteAlumniModal">
+          <div class="card-body">
+            <p>INSTITUTE-ALUMNI BRIDGE</p>
+            <P>Bridge the gap between the institute<br>and its graduates. Facilitating<br>collaboration and communication.</P>
+          </div>
         </div>
       </div>
-      <div class="col-md-3">
-        <div class="card">
-            <!-- <img src="img/Calender.jpg" class="card-img-top" style="max-height:10rem;width: 100px;" alt="..."> -->
-
-            <div class="card-body">
-              <p>STAY INFORMED</p>
-              <P>Stay updated with regular newsletters<br>and publications, keeping you<br>connected to your alma mater</P>
-              
-            </div>
-          </a>
-        </div>
+   
+<!-- Modal for INSTITUTE-ALUMNI BRIDGE -->
+<div class="modal fade" id="instituteAlumniModal" tabindex="-1" aria-labelledby="instituteAlumniModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="instituteAlumniModalLabel">INSTITUTE-ALUMNI BRIDGE</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="col-md-3">
-        <div class="card">
-            <!-- <img src="img/Calender.jpg" class="card-img-top" style="max-height:10rem;width: 100px;" alt="..."> -->
-
-            <div class="card-body">
-              <p>LOCAL CHAPTERS</p>
-              <P>Access alumni chapters globally, fostering<br>a sense of community and belonging<br> through physical iteractions<br>Visit: https://iitkalmuni.org chapters</P>
-              
-            </div>
-          </a>
-        </div>
+      <div class="modal-body">
+        <p>Bridge the gap between the institute and its graduates. Facilitate collaboration and communication to build a stronger, connected community that benefits both the institute and its alumni.</p>
       </div>
-      <div class="col-md-3">
-        <div class="card">
-            <!-- <img src="img/Calender.jpg" class="card-img-top" style="max-height:10rem;width: 100px;" alt="..."> -->
-
-            <div class="card-body">
-              <p>EXCLUSIVE MAIL ID</p>
-              <P>Receive apersonalized email ID. offering<br>a professional communication channel.</P>
-              
-            </div>
-          </a>
-        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
-      <div class="col-md-3">
-        <div class="card">
-            <!-- <img src="img/Calender.jpg" class="card-img-top" style="max-height:10rem;width: 100px;" alt="..."> -->
+    </div>
+  </div>
+</div>
 
-            <div class="card-body">
-              <p>ACADEMIC SERVICES</p>
-              <P>Obtain academic transcripts and<br>certificates conveniently through<br> the almuni Association</P>
-              
+       <div class="col-md-3">
+            <div class="card" data-bs-toggle="modal" data-bs-target="#stayInformedModal">
+                <div class="card-body">
+                    <p>STAY INFORMED</p>
+                    <P>Stay updated with regular newsletters<br>and publications, keeping you<br>connected to your alma mater.</P>
+                </div>
             </div>
-          </a>
         </div>
+		<!-- Modal 1: STAY INFORMED -->
+<div class="modal fade" id="stayInformedModal" tabindex="-1" aria-labelledby="stayInformedModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="stayInformedModalLabel">STAY INFORMED</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="col-md-3">
-        <div class="card">
-            <!-- <img src="img/Calender.jpg" class="card-img-top" style="max-height:10rem;width: 100px;" alt="..."> -->
+      <div class="modal-body">
+        <p>Stay connected to your alma mater with regular newsletters and publications. Get the latest news, updates, and achievements from the alumni community and beyond.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-            <div class="card-body">
-              <p>MENTORSHIP</p>
-              <P>Receive guidance and support from<br>senior alumni, enhancing personal<br>and professional groth.</P>
-              
+		
+		
+     <!-- Card 2: LOCAL CHAPTERS -->
+        <div class="col-md-3">
+            <div class="card" data-bs-toggle="modal" data-bs-target="#localChaptersModal">
+                <div class="card-body">
+                    <p>LOCAL CHAPTERS</p>
+                    <P>Access alumni chapters globally, fostering<br>a sense of community and belonging<br>through physical interactions.</P>
+                </div>
             </div>
-          </a>
         </div>
+		<!-- Modal 2: LOCAL CHAPTERS -->
+<div class="modal fade" id="localChaptersModal" tabindex="-1" aria-labelledby="localChaptersModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="localChaptersModalLabel">LOCAL CHAPTERS</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="col-md-3">
-        <div class="card">
-            <!-- <img src="img/Calender.jpg" class="card-img-top" style="max-height:10rem;width: 100px;" alt="..."> -->
+      <div class="modal-body">
+        <p>Engage with alumni chapters around the globe, fostering a sense of belonging through local interactions. Strengthen your connection with fellow alumni by participating in chapter events.</p>
+        <p>Visit: <a href="https://iitkalmuni.org" target="_blank">https://iitkalmuni.org</a> for more details.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-            <div class="card-body">
-              <p>RECONNECT WITH CLASSMATES</p>
-              <P>Relive memories and reconnect<br>classmates at milestone reunions</P>
-              
+        <!-- Card 3: EXCLUSIVE MAIL ID -->
+        <div class="col-md-3">
+            <div class="card" data-bs-toggle="modal" data-bs-target="#exclusiveMailIdModal">
+                <div class="card-body">
+                    <p>EXCLUSIVE MAIL ID</p>
+                    <P>Receive a personalized email ID, offering<br>a professional communication channel.</P>
+                </div>
             </div>
-          </a>
         </div>
+		<!-- Modal 3: EXCLUSIVE MAIL ID -->
+<div class="modal fade" id="exclusiveMailIdModal" tabindex="-1" aria-labelledby="exclusiveMailIdModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exclusiveMailIdModalLabel">EXCLUSIVE MAIL ID</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="col-md-3">
-        <div class="card">
-            <!-- <img src="img/Calender.jpg" class="card-img-top" style="max-height:10rem;width: 100px;" alt="..."> -->
+      <div class="modal-body">
+        <p>Get a personalized email ID that offers a professional communication channel. Stay connected with fellow alumni and enhance your networking capabilities.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-            <div class="card-body">
-              <p>CAMPUS TOURS</p>
-              <P>Rediscover the campus with organized<br>tour for youand your family<br>reliving fond memories.</P>
-              
+        <!-- Card 4: ACADEMIC SERVICES -->
+        <div class="col-md-3">
+            <div class="card" data-bs-toggle="modal" data-bs-target="#academicServicesModal">
+                <div class="card-body">
+                    <p>ACADEMIC SERVICES</p>
+                    <P>Obtain academic transcripts and<br>certificates conveniently through<br>the Alumni Association.</P>
+                </div>
             </div>
-          </a>
         </div>
+		<!-- Modal 4: ACADEMIC SERVICES -->
+<div class="modal fade" id="academicServicesModal" tabindex="-1" aria-labelledby="academicServicesModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="academicServicesModalLabel">ACADEMIC SERVICES</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="col-md-3">
-        <div class="card">
-            <!-- <img src="img/Calender.jpg" class="card-img-top" style="max-height:10rem;width: 100px;" alt="..."> -->
+      <div class="modal-body">
+        <p>Request academic transcripts and certificates easily through the Alumni Association. Streamline the process for obtaining your important academic documents.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-            <div class="card-body">
-              <p>CAMPUS FACILITIES</p>
-              <P>Enjoy discounted rate at the visitors<br>Hostel on when booking rooms at iitk.<br>You can also visit hostels, the<br> library departments, labs etc with the<br>help of almuni Association</P>
-              
+
+        <!-- Card 5: MENTORSHIP -->
+        <div class="col-md-3">
+            <div class="card" data-bs-toggle="modal" data-bs-target="#mentorshipModal">
+                <div class="card-body">
+                    <p>MENTORSHIP</p>
+                    <P>Receive guidance and support from<br>senior alumni, enhancing personal<br>and professional growth.</P>
+                </div>
             </div>
-          </a>
         </div>
+		<!-- Modal 5: MENTORSHIP -->
+<div class="modal fade" id="mentorshipModal" tabindex="-1" aria-labelledby="mentorshipModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="mentorshipModalLabel">MENTORSHIP</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="col-md-3">
-        <div class="card">
-            <!-- <img src="img/Calender.jpg" class="card-img-top" style="max-height:10rem;width: 100px;" alt="..."> -->
+      <div class="modal-body">
+        <p>Receive guidance from senior alumni who can help you navigate your career and personal development. Gain valuable insights and support from those who have been in your shoes.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-            <div class="card-body">
-              <p>DIGITAL NETWORKING</p>
-              <P>Expand your professional and social<br>network through various online<br>platforms like PAIIT, Facebook, Linkedin<br>Twitter and more.</P>
-              
+        <!-- Card 6: RECONNECT WITH CLASSMATES -->
+        <div class="col-md-3">
+            <div class="card" data-bs-toggle="modal" data-bs-target="#reconnectClassmatesModal">
+                <div class="card-body">
+                    <p>RECONNECT WITH CLASSMATES</p>
+                    <P>Relive memories and reconnect<br>with classmates at milestone reunions.</P>
+                </div>
             </div>
-          </a>
         </div>
+		<!-- Modal 6: RECONNECT WITH CLASSMATES -->
+<div class="modal fade" id="reconnectClassmatesModal" tabindex="-1" aria-labelledby="reconnectClassmatesModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="reconnectClassmatesModalLabel">RECONNECT WITH CLASSMATES</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
+      <div class="modal-body">
+        <p>Reconnect with old classmates and relive fond memories at alumni reunions. Stay in touch with your peers and keep your connections strong.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
+        <!-- Card 7: CAMPUS TOURS -->
+        <div class="col-md-3">
+            <div class="card" data-bs-toggle="modal" data-bs-target="#campusToursModal">
+                <div class="card-body">
+                    <p>CAMPUS TOURS</p>
+                    <P>Rediscover the campus with organized<br>tours for you and your family,<br>reliving fond memories.</P>
+                </div>
+            </div>
+        </div>
+		<!-- Modal 7: CAMPUS TOURS -->
+<div class="modal fade" id="campusToursModal" tabindex="-1" aria-labelledby="campusToursModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="campusToursModalLabel">CAMPUS TOURS</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Rediscover your alma mater with guided campus tours. Walk down memory lane with organized visits for you and your family.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <!-- Card 8: CAMPUS FACILITIES -->
+        <div class="col-md-3">
+            <div class="card" data-bs-toggle="modal" data-bs-target="#campusFacilitiesModal">
+                <div class="card-body">
+                    <p>CAMPUS FACILITIES</p>
+                    <P>Enjoy discounted rates at the Visitors<br>Hostel when booking rooms at IITK.<br>Visit hostels, the library, departments,<br>labs, etc. with help from the Alumni Association.</P>
+                </div>
+            </div>
+        </div>
+		<!-- Modal 8: CAMPUS FACILITIES -->
+<div class="modal fade" id="campusFacilitiesModal" tabindex="-1" aria-labelledby="campusFacilitiesModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="campusFacilitiesModalLabel">CAMPUS FACILITIES</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Take advantage of campus facilities at discounted rates. Book rooms at the Visitors Hostel, visit the library, tour the hostels, and more with the help of the Alumni Association.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <!-- Card 9: DIGITAL NETWORKING -->
+        <div class="col-md-3">
+            <div class="card" data-bs-toggle="modal" data-bs-target="#digitalNetworkingModal">
+                <div class="card-body">
+                    <p>DIGITAL NETWORKING</p>
+                    <P>Expand your professional and social<br>network through various online platforms<br>like PAIIT, Facebook, LinkedIn, Twitter, and more.</P>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 9: DIGITAL NETWORKING -->
+<div class="modal fade" id="digitalNetworkingModal" tabindex="-1" aria-labelledby="digitalNetworkingModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="digitalNetworkingModalLabel">DIGITAL NETWORKING</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Expand your network and stay connected with fellow alumni through digital platforms. Engage with the community on PAIIT, Facebook, LinkedIn, Twitter, and more.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
       <!-- <div class="col-md-3">
         <div class="card">
           <a href="eMasters-Student-Handbook.html" style="text-decoration: none;">
@@ -572,7 +740,7 @@
       </div> -->
     </div>
   </div>
-</marquee>
+
 </center>
 
 <!-- <div><br><br><br></div>
@@ -591,9 +759,6 @@
 
 
 <div><br><br><br></div> -->
-
-
-
 
    
 
