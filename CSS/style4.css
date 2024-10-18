@@ -11,12 +11,11 @@ html, body {
   box-sizing: border-box;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: 400;
-  color: black;
+  
   
 }
-/* logo and Navbar
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  @media (max-width: 767.98px) {
+/* Logo and Navbar –––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (max-width: 767.98px) {
     /* Target only the second logo */
     .right-logo .logo img {
         margin-left: 0 !important; /* Remove the large margin */
@@ -24,41 +23,78 @@ html, body {
     }
 }
 
+.navbar {
+    background-color: #2d3e50; /* Navbar background color */
+}
 
-.dropdown .dropdown-menu{
+.navbar .nav-link,
+.navbar-brand,
+.navbar .dropdown-menu a {
+    color: white !important; /* Default text color */
+}
+
+.navbar .dropdown-menu {
+    background-color: #2d3e50 !important; /* Keep dropdown background same as navbar */
+    border: none;
+    box-shadow: none; /* Remove any default Bootstrap shadow */
+}
+
+/* Hover Text Color for Navbar Links and Dropdown Items */
+.navbar .nav-link:hover,
+.navbar-brand:hover,
+.navbar .dropdown-menu a:hover {
+    color: #3ca5ac !important; /* Text color on hover */
+}
+
+/* Dropdown Styling */
+.dropdown .dropdown-menu {
     display: none;
     width: max-content;
    
 }
-.dropdown:hover > .dropdown-menu, .dropend:hover > .dropdown-menu{
-    display: block; 
-    margin-top: .125em;
-    margin-left: .125em;
+
+.dropdown:hover > .dropdown-menu,
+.dropend:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0.125em;
+    margin-left: 0.125em;
+    background-color: #2d3e50 !important; /* Ensure background stays consistent */
     transition: opacity 0.9s ease-in-out;
-    transition-duration: 60s;/* time of hover*/
+    transition-duration: 60s; /* Hover time */
     min-width: 100%;
     padding-right: 10px;
 }
 
-@media screen and (min-width:769px){
-    .dropend:hover > .dropdown-menu{
+@media screen and (min-width: 769px) {
+    .dropend:hover > .dropdown-menu {
         position: absolute;
         top: 0;
         left: 100%;
-        margin-left: .125em;
+        margin-left: 0.125em;
     }
 }
 
-/* Footer
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  .container-fluid.footer {
-    background-color: #DFDFDF;
+
+
+
+/* Footer –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container-fluid.footer {
+    background-color: #2d3e50; /* Footer background color */
+    color: white !important; /* Ensure all text in the footer is white */
+}
+
+/* Apply white text color to specific elements inside the footer */
+.container-fluid.footer a,
+.container-fluid.footer p,
+.container-fluid.footer h5 {
+    color: white !important; /* Override any other styles */
 }
 
 /* Input styles */
 .contact-inputs {
     width: 250px;
     height: 30px;
+    color: #2d3e50; /* Input text color */
 }
 
 .contact-inputs[type="textarea"] {
@@ -67,14 +103,15 @@ html, body {
 
 /* Button styles */
 .btn-success.btn-block {
-    background-color: rgb(4, 89, 169);
-    color:White;
+    background-color: #2d3e50; /* Button background */
+    color: white !important; /* Ensure button text is white */
 }
+
 /* Marquee
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .team-item {
     margin-top: 1%;
-    background-color: rgb(4, 89, 169);
+    background-color: #2d3e50;
     padding: 1px;
     height: 50px;
     border-radius: 8px;
@@ -102,8 +139,8 @@ html, body {
   /* Progrmme header
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   :root {
-    --main-heading-color: rgb(4, 89, 169);
-    --btn-background-color: rgb(4, 89, 169);
+    --main-heading-color: #2d3e50;
+    --btn-background-color: #2d3e50;
     --btn-text-color: white;
 }
 
@@ -150,7 +187,7 @@ html, body {
 }
 
 .icon-color {
-    color: rgb(4, 89, 169);
+    color: #2d3e50;
 }
 
 .custom-button {
@@ -163,7 +200,7 @@ html, body {
 }
 
 .btn:hover {
-    background-color: #b3cde5 !important;
+    background-color: #2d3e50 !important;
 }
 
 /* Additional customizations for responsiveness */
