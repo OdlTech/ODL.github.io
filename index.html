@@ -44,7 +44,7 @@ html{
     
 
    
-  
+ 
   <!--Logo
   <div class="container-fluid" style="background-color: rgb(238, 247, 248);">
     <div class="row align-items-center">
@@ -63,8 +63,8 @@ html{
   
  -->
 <!-- Navbar Section -->
-<nav class="navbar  navbar-expand-lg navbar-light sticky-top" style="background-color: rgb(238, 247, 248);">
-  <div class="container-fluid" style="background-color:#DFDFDF;padding-left: 20px;"> 
+<nav class="navbar navbar-expand-lg sticky-top"style="background-color: rgb(238, 247, 248);">
+   <div class="container-fluid" style="background-color:#DFDFDF;padding-left: 20px;"> 
     <a class="navbar-brand" href="index.html" style="font-size:17px;"><strong>HOME</strong></a>
  
  
@@ -378,94 +378,138 @@ html{
 -->
      
     <!--News Start-->
-<div class="container py-1">
-  <div class="container">
-      <div class="row row-equal-height">
-          <div class="col-sm-6 col-equal-height">
-              <div class="card">
-                  <div class="card-body">
-                      <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-                          <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
-                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
-                          </symbol>
-                          <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
-                              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
-                          </symbol>
-                          <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
-                              <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                          </symbol>
-                      </svg>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Navbar with Content</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-                      <div class="alert alert-primary d-flex align-items-center mb-3" role="alert">
-                          <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#check-circle-fill"/></svg>
-                          <div>
-                              <a href="Annual_Report.html" style="color: black;">Annual Report</a>
-                          </div>
-                      </div>
+  <style>
+    /* Ensure that there is no overflow on the body and html */
+    html, body {
+      height: 100%;
+      margin: 0;
+      overflow-x: hidden;
+    }
 
-                      <div class="alert alert-success d-flex align-items-center mb-3" role="alert">
-                          <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
-                          <div>
-                              <a href="NEWS_Letter.html" style="color: black;">NewsLetter</a>
-                          </div>
-                      </div>
+    /* Make sure the sticky navbar stays on top */
+    .sticky-top {
+      z-index: 1030; /* Higher than other elements */
+    }
 
-                      <div class="alert alert-warning d-flex align-items-center mb-3" role="alert">
-                          <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:"><use xlink:href="#check-circle-fill"/></svg>
-                          <div>
-                              <a href="pressrelease.html" style="color: black;">Press Release</a> 
-                          </div>
-                      </div>
+    /* Optional: Adjust spacing to avoid overlap with content */
+    .content {
+      margin-top: 80px; /* Adjust to match navbar height */
+    }
 
-                      <div class="alert alert-danger d-flex align-items-center mb-3" role="alert">
-                          <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#check-circle-fill"/></svg>
-                          <div>
-                              <a href="Social_media.html" style="color: black;">Social Media</a>
-                          </div>
-                      </div>
+    /* Equal height row fix */
+    .row-equal-height {
+      display: flex;
+    }
+    .col-equal-height {
+      display: flex;
+      flex-direction: column;
+    }
 
-                      <div class="alert alert-dark d-flex align-items-center mb-3" role="alert">
-                          <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Dark:"><use xlink:href="#check-circle-fill"/></svg>
-                          <div>
-                              <a href="tesimonial.html" style="color: black;">Testimonial</a>
-                          </div>
-                      </div>
-                  </div>
+  </style>
+</head>
+<body>
+
+ 
+
+  <!-- Content Section -->
+  <div class="container py-1 content">
+    <div class="row row-equal-height">
+      <div class="col-sm-6 col-equal-height">
+        <div class="card">
+          <div class="card-body">
+            <div class="alert alert-primary d-flex align-items-center mb-3" role="alert">
+              <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+                <use xlink:href="#check-circle-fill" />
+              </svg>
+              <div>
+                <a href="Annual_Report.html" style="color: black;">Annual Report</a>
               </div>
-          </div>
-          <div class="col-sm-6 col-equal-height">
-              <div class="card2">
-                  <img id="clickable-image-1" src="img/PIC_Message.jpg" class="img-fluid" style="width: 100%; height: auto;" data-bs-toggle="modal" data-bs-target="#imageModal1">
+            </div>
+
+            <div class="alert alert-success d-flex align-items-center mb-3" role="alert">
+              <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:">
+                <use xlink:href="#check-circle-fill" />
+              </svg>
+              <div>
+                <a href="NEWS_Letter.html" style="color: black;">NewsLetter</a>
               </div>
+            </div>
+
+            <div class="alert alert-warning d-flex align-items-center mb-3" role="alert">
+              <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:">
+                <use xlink:href="#check-circle-fill" />
+              </svg>
+              <div>
+                <a href="pressrelease.html" style="color: black;">Press Release</a>
+              </div>
+            </div>
+
+            <div class="alert alert-danger d-flex align-items-center mb-3" role="alert">
+              <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:">
+                <use xlink:href="#check-circle-fill" />
+              </svg>
+              <div>
+                <a href="Social_media.html" style="color: black;">Social Media</a>
+              </div>
+            </div>
+
+            <div class="alert alert-dark d-flex align-items-center mb-3" role="alert">
+              <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Dark:">
+                <use xlink:href="#check-circle-fill" />
+              </svg>
+              <div>
+                <a href="testimonial.html" style="color: black;">Testimonial</a>
+              </div>
+            </div>
           </div>
+        </div>
       </div>
-  </div>
-</div>
-<!-- Modal -->
-<div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="imageModalLabel">PICDL's Message</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <img src="" class="img-fluid" id="enlarged-image1">
+
+      <div class="col-sm-6 col-equal-height">
+        <div class="card">
+          <img id="clickable-image-1" src="img/PIC_Message.jpg" class="img-fluid" 
+               style="width: 100%; height: auto;" data-bs-toggle="modal" data-bs-target="#imageModal1">
+        </div>
       </div>
     </div>
   </div>
-</div>
- 
-<script>
-document.querySelectorAll('[id^="clickable-image"]').forEach(img => {
-    img.addEventListener('click', function() {
+
+  <!-- Modal -->
+  <div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="imageModalLabel">PICDL's Message</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="" class="img-fluid" id="enlarged-image1">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.querySelectorAll('[id^="clickable-image"]').forEach(img => {
+      img.addEventListener('click', function () {
         const src = this.src;
         document.getElementById('enlarged-image1').src = src;
+      });
     });
-});
-</script>
+  </script>
 
-    <div><br><br></div>  
+</body>
+</html>
+
      <!--pre Footer -->
      
    
