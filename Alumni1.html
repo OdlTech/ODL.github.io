@@ -230,7 +230,7 @@
 
     <!--Banner image-->
 
-    <img src="img/Alumnibanner.jpg" class="img-fluid" alt="IIT Kanpur" style="height: 55vh; width: 100%;">
+   <img src="img/Alumnibanner.jpg" class="img-fluid" alt="IIT Kanpur" style="height: auto; max-height: 55vh; width: 100%; object-fit: cover;">
 
    
 
@@ -239,30 +239,60 @@
 
 <div class="container">
   <div class="row row-cols-1 row-cols-md-3 g-3">
-    <div class="col">
-      <div class="card" style="max-width: 450px; margin: auto;">
-        <img src="img/alumni networking.jpg" class="card-img-top" style="height: 240px; object-fit: cover;" alt="...">
-        <div class="card-body text-center">
-          <h6 class="card-title">Chapterwise Networking</h6>
-        </div>
+   <div class="col">
+  <div class="card" style="max-width: 450px; margin: auto;">
+    <a href="https://iitkalumni.org/chapters/" style="text-decoration: none;">
+      <img src="img/alumni networking.jpg" class="card-img-top" style="height: 240px; object-fit: cover;" alt="...">
+    </a>
+    <div class="card-body text-center">
+      <a href="https://iitkalumni.org/chapters/" style="text-decoration: none; color: inherit;">Chapterwise Networking</a>
+    </div>
+  </div>
+</div>
+
+   <!-- Assistance Card -->
+<div class="col">
+  <div class="card" style="max-width: 450px; margin: auto; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#assistanceModal">
+    <img src="img/assistance.jpg" class="card-img-top" style="height: 240px; object-fit: cover;" alt="...">
+    <div class="card-body text-center">
+      <h6 class="card-title">Assistance</h6>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="assistanceModal" tabindex="-1" aria-labelledby="assistanceModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl"> <!-- Use modal-xl for larger width -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="assistanceModalLabel">Benefits</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <!-- Responsive Image inside Modal -->
+      <img src="img/Benefits.jpg" 
+           style="width: 100%; height: auto; max-height: 80vh; object-fit: contain;" 
+           alt="Assistance Image">
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
-    <div class="col">
-      <div class="card" style="max-width: 450px; margin: auto;">
-        <img src="img/assistance.jpg" class="card-img-top" style="height: 240px; object-fit: cover;" alt="...">
-        <div class="card-body text-center">
-          <h6 class="card-title">Assistance</h6>
-        </div>
-      </div>
+  </div>
+</div>
+
+
+  <div class="col">
+  <div class="card" style="max-width: 450px; margin: auto;">
+    <a href="FAQalumni.html" style="text-decoration: none;">
+      <img src="img/FAQs Alumni.jpg" class="card-img-top" style="height: 240px; object-fit: cover;" alt="...">
+    </a>
+    <div class="card-body text-center">
+      <a href="FAQalumni.html" style="text-decoration: none; color: inherit;">FAQ</a>
     </div>
-    <div class="col">
-      <div class="card" style="max-width: 450px; margin: auto;">
-        <img src="img/FAQs Alumni.jpg" class="card-img-top" style="height: 240px; object-fit: cover;" alt="...">
-        <div class="card-body text-center">
-          <h6 class="card-title">FAQ</h6>
-        </div>
-      </div>
-    </div>
+  </div>
+</div>
+
   </div>
 </div>
 <div><br>
@@ -621,7 +651,7 @@
       </div>
 </div>
 <div><br><br></div>
-
+<!---
 <div class="container">
 
   <div class="card">
@@ -634,9 +664,9 @@
           <div class="accordion-body">
             <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
           </div>
-        </div> -->
+        </div> 
       </div>
-      <!-- <a href="#" style="color: black;"><center> Benefits</center> </a> -->
+      <!-- <a href="#" style="color: black;"><center> Benefits</center> </a> 
     </div>
   </div>
 
@@ -646,7 +676,7 @@
 </center>
 
 
-<!---
+
 <center>
   <div class="container py-6">
      <div class="d-flex">
