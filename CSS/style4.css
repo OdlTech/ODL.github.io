@@ -75,6 +75,32 @@ html, body {
         margin-left: 0.125em;
     }
 }
+/* Sticky top –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  /* Ensure that there is no overflow on the body and html */
+  html, body {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  /* Make sure the sticky navbar stays on top */
+  .sticky-top {
+    z-index: 1030; /* Higher than other elements */
+  }
+
+  /* Optional: Adjust spacing to avoid overlap with content */
+  .content {
+    margin-top: 80px; /* Adjust to match navbar height */
+  }
+
+  /* Equal height row fix */
+  .row-equal-height {
+    display: flex;
+  }
+  .col-equal-height {
+    display: flex;
+    flex-direction: column;
+  }
 
 
 
