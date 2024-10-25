@@ -41,6 +41,7 @@ html, body {
 }
 
 /* Hover Text Color for Navbar Links and Dropdown Items */
+
 .navbar .nav-link:hover,
 .navbar-brand:hover,
 .navbar .dropdown-menu a:hover {
