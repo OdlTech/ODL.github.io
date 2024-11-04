@@ -64,6 +64,18 @@ html{
   
   
  -->
+
+ <!-- jQuery library -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Custom script to close navbar on link click -->
+<script>
+    $(document).ready(function () {
+        $('.navbar-collapse a').click(function () {
+            $('.navbar-collapse').collapse('hide'); // Closes the dropdown menu
+        });
+    });
+</script>
 <!-- Navbar Section -->
 <nav class="navbar navbar-expand-lg sticky-top"style="background-color: #3ca5ac;">
    <div class="container-fluid" style="background-color:#2d3e50;padding-left: 20px;"> 
