@@ -244,7 +244,7 @@
     <div class="col-sm-6">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Esteemed Alumni </h5>
+         <h5 class="card-title fw-bold">Esteemed Alumni</h5>
           <p class="card-text">small description </p>
           
         </div>
@@ -253,11 +253,11 @@
     <div class="col-sm-6">
       <div class="card1">
         <div class="card-body">
-          <h5 class="card-title">Our Alumni </h5>
+    <h5 class="card-title alumni-title">Our Alumni</h5>
           <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
               <div class="card">
-                <img src="..." class="card-img-top" alt="...">
+               
                 <div class="card-body">
                   <h5 class="card-title">Computer Science and Engineering</h5>
                   <!-- Button trigger modal -->
@@ -268,7 +268,40 @@
               </div>
               </div>
             </div>
-			
+	<style>
+	.card-body {
+    text-align: center;
+    position: relative;
+}
+
+.alumni-title {
+    display: inline-block;
+    position: relative;
+    padding: 0 10px; /* Adjust padding as needed */
+    font-weight: bold;
+}
+
+.alumni-title::before,
+.alumni-title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 13vw; /* Extend lines to the edges */
+    height: 2px;
+    background-color: #000; /* Change color as needed */
+}
+
+.alumni-title::before {
+    right: 100%; /* Line to the left */
+    margin-right: 10px; /* Adjust spacing */
+}
+
+.alumni-title::after {
+    left: 100%; /* Line to the right */
+    margin-left: 10px; /* Adjust spacing */
+}
+
+	</style>	
 	 <!-- Full Screen Modal -->
 <div class="modal fade" id="fullscreenModal" tabindex="-1" aria-labelledby="fullscreenModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
@@ -458,7 +491,7 @@
 
             <div class="col">
               <div class="card2">
-                <img src="..." class="card-img-top" alt="...">
+               
                 <div class="card-body">
                   <h5 class="card-title">Electrical Engineering</h5>
                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#fullscreenModal1">
@@ -761,7 +794,7 @@
 			
             <div class="col">
               <div class="card3">
-                <img src="..." class="card-img-top" alt="...">
+                
                 <div class="card-body">
                   <h5 class="card-title">Department of Management Sciences (Initially IME)</h5>
                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#fullscreenModal2">
@@ -1291,7 +1324,7 @@
                
             <div class="col">
               <div class="card">
-                <img src="..." class="card-img-top" alt="...">
+                
                 <div class="card-body">
                   <h5 class="card-title">Department of Economic Sciences and Management</h5>
                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#fullscreenModal3">
@@ -1557,39 +1590,45 @@
 </div>
        
 <div><br><br></div>
-<div class="container ">
-  <div class="row row-cols-1 row-cols-md-3 g-3">
-  <div class="col">
-  <div class="card" style="max-width: 250px; margin: auto;">
-    <a href="https://iitkalumni.org/chapters/" style="text-decoration: none;">
-      <div style="display: flex; justify-content: center; align-items: center; max-height: 180px; overflow: hidden;">
-        <img src="img/alumni networking.jpg" 
-             style="max-width: 60%; height: auto;" 
-             alt="...">
+<div class="container">
+  <div class="row g-3">
+    
+    <!-- Chapterwise Networking Card -->
+    <div class="col-md-4">
+      <div class="card" style="width: 400px; height: 300px; margin: auto; padding-top: 10px;">
+        <a href="https://iitkalumni.org/chapters/" style="text-decoration: none;">
+          <div style="display: flex; justify-content: center; align-items: center; height: 240px; overflow: hidden; padding-top: 10px;">
+            <img src="img/alumni networking.jpg" 
+                 style="max-width: 60%; height: auto;" 
+                 alt="...">
+          </div>
+        </a>
+        <div class="card-body text-center" style="padding-top: 10px;">
+          <a href="https://iitkalumni.org/chapters/" style="text-decoration: none; color: inherit;">
+            Chapterwise Networking
+          </a>
+        </div>
       </div>
-    </a>
-    <div class="card-body text-center">
-      <a href="https://iitkalumni.org/chapters/" style="text-decoration: none; color: inherit;">
-        Chapterwise Networking
-      </a>
     </div>
-  </div>
-</div>
+
+
 
 
    <!-- Assistance Card -->
-<div class="col">
-  <div class="card" style="max-width: 250px; margin: auto; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#assistanceModal">
-    <div style="display: flex; justify-content: center; align-items: center; height: 170px; overflow: hidden;">
-      <img src="img/assistance.jpg" 
-           style="max-width: 60%; height: auto;" 
-           alt="...">
+    <div class="col-md-4">
+      <div class="card" style="width: 400px; height: 300px; margin: auto; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#assistanceModal">
+        <div style="display: flex; justify-content: center; align-items: center; height: 240px; overflow: hidden; padding-top: 10px;">
+          <img src="img/assistance.jpg" 
+               style="max-width: 60%; height: auto;" 
+               alt="...">
+        </div>
+        <div class="card-body text-center" style="padding-top: 10px;">
+          <h6 class="card-title">Assistance</h6>
+        </div>
+      </div>
     </div>
-    <div class="card-body text-center">
-      <h6 class="card-title">Assistance</h6>
-    </div>
-  </div>
-</div>
+
+
 
 <!-- Modal -->
 <div class="modal fade" id="assistanceModal" tabindex="-1" aria-labelledby="assistanceModalLabel" aria-hidden="true">
@@ -1613,21 +1652,21 @@
 </div>
 
 
-<div class="col">
-  <div class="card" style="max-width: 250px; margin: auto;">
-    <a href="FAQalumni.html" style="text-decoration: none;">
-      <div style="display: flex; justify-content: center; align-items: center; height: 170px; overflow: hidden;">
-        <img src="img/FAQs Alumni.jpg" 
-             style="max-width: 60%; height: auto;" 
-             alt="FAQ">
+ <!-- FAQ Card -->
+    <div class="col-md-4">
+      <div class="card" style="width: 400px; height: 300px; margin: auto; padding-top: 10px;">
+        <a href="FAQalumni.html" style="text-decoration: none;">
+          <div style="display: flex; justify-content: center; align-items: center; height: 240px; overflow: hidden; padding-top: 10px;">
+            <img src="img/FAQs Alumni.jpg" 
+                 style="max-width: 60%; height: auto;" 
+                 alt="FAQ">
+          </div>
+        </a>
+        <div class="card-body text-center" style="padding-top: 10px;">
+          <a href="FAQalumni.html" style="text-decoration: none; color: inherit;">FAQ</a>
+        </div>
       </div>
-    </a>
-    <div class="card-body text-center">
-      <a href="FAQalumni.html" style="text-decoration: none; color: inherit;">FAQ</a>
     </div>
-  </div>
-</div>
-
 
   </div>
 </div>
