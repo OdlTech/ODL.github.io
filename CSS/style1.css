@@ -311,8 +311,8 @@ a:focus {
   font-family: 'Merriweather Sans', sans-serif;
   text-transform: uppercase;
   padding: 10px 45px;
-  background-color: #1dffd9;
-  border: 1px solid #1dffd9;
+  background-color:#7cd9e9;
+  border: 1px solid #7cd9e9;
   border-radius: 5px;
   color: #ffffff;
   margin-top: 15px;
@@ -389,7 +389,7 @@ a:focus {
 }
 
 .feature_section .feature_container .box:hover, .feature_section .feature_container .box.active {
-  background-color: #1dffd9;
+  background-color: #7cd9e9;
   color: #ffffff;
 }
 
