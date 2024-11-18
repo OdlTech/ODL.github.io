@@ -536,7 +536,7 @@ a:focus {
 }
 
 .service_section .box:hover {
-  background-color: #ff8a1d;
+  background-color:#7cd9e9;
   color: #ffffff;
 }
 
@@ -800,7 +800,7 @@ a:focus {
 }
 
 .info_items .item:hover .img-box {
-  background-color: #ff8a1d;
+  background-color: #7cd9e9;
 }
 
 .info_items {
