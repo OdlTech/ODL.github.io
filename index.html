@@ -213,7 +213,7 @@ html{
               <b>ACADEMICS</b>
             </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="Calendar_2024.html">Academic Calendar</a></li>
+                    <li><a class="dropdown-item" href="academics_calendar.html">Academic Calendar</a></li>
                     <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="eMasters-Student-Handbook.html">Student Handbook </a></li>
                     <li><hr class="dropdown-divider"></li>
