@@ -153,9 +153,6 @@ html{
  
    </section>
 
-
-  <!-- end feature section -->
-
   <!-- about section -->
 
   <section class="about_section layout_padding-bottom">
@@ -183,22 +180,53 @@ html{
       </div>
     </div>
   </section>
+  
+   <style>
+    /* Custom styles for the outer container */
+    .custom-container {
+      max-width: 1400px; /* Limit the container width */
+      margin: 0 auto; /* Center align the container */
+    }
 
-  <!-- end about section -->
+    /* Uniform styling for images */
+    .card-img-top {
+      object-fit: contain; /* Ensures the entire image is visible */
+      height: 450px; /* Set uniform height for images */
+      width: 100%; /* Ensure the image fits the card width */
+      background-color: white; /* Optional: add background color for images that don't fill completely */
+    }
+  </style>
+    <div class="custom-container mt-5">
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-sm-12 col-md-6">
+        <div class="card">
+          <img src="img/SOP.jpg" class="card-img-top" alt="SOP - Students">
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-sm-12 col-md-6">
+        <div class="card">
+          <img src="img/students.jpg" class="card-img-top" alt="Workflow for Students">
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-
-
-
+<div><br><br></div>
   
 
   
  <!-- info section -->
  <section class="info_section ">
-  
+  <div class="container text-center">
+    <a href="Terms.html" class="btn btn-primary w-100" role="button" style="color: white;">Terms & Conditions</a>
+  </div>
 
  
-</div>
+
 
 
 </section>
