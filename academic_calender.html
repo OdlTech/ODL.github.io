@@ -702,7 +702,7 @@
  <div class="container">
 
 
-<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"> eMasters Calendar, 2024-25 Quarter 3, January - March 2024</button>
 
 <button type="button" class="btn btn-warning">Warning</button>
 <button type="button" class="btn btn-info">Info</button>
@@ -712,9 +712,7 @@
 
 
   <!-- Button trigger modal -->
-<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    eMasters Calendar, 2024-25 Quarter 3, January - March 2024
-  </button>
+
   
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -725,7 +723,37 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          ...
+          <table class="table table-bordered">
+            
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            
+          </table>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
