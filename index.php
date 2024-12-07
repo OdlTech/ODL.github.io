@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -97,11 +99,11 @@ html{
                 </a></b>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                        
-                  <li><a class="dropdown-item" href="Gov.html">Governance</a></li>
+                  <li><a class="dropdown-item" href="Gov.php">Governance</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="work.html">Workflow</a></li>
+                  <li><a class="dropdown-item" href="work.php">Workflow</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="people.html">People</a></li>
+                  <li><a class="dropdown-item" href="people.php">People</a></li>
           
           
               </ul>
@@ -119,7 +121,7 @@ html{
                             Civil Engineering (CE)
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="SCPM.html">Sustainable Construction Practices and Project Management (SCPM )</a></li>
+                            <li><a class="dropdown-item" href="SCPM.php">Sustainable Construction Practices and Project Management (SCPM )</a></li>
                             
                         </ul>
                     </li>
@@ -130,7 +132,7 @@ html{
                             Computer Science and Engineering (CSE)
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="CY.html">Cyber Security (CY)</a></li>
+                            <li><a class="dropdown-item" href="CY.php">Cyber Security (CY)</a></li>
                             
                         </ul>
                     </li>
@@ -144,9 +146,9 @@ html{
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                           <!--<li><a class="dropdown-item" href="AHEP.html">Applied Health Economics and Policy (AHEP)</a></li>
                           <li><hr class="dropdown-divider"></li>-->
-                            <li><a class="dropdown-item" href="BFPP.html">Business Finance and Public Policy (BFPP)</a></li>
+                            <li><a class="dropdown-item" href="BFPP.php">Business Finance and Public Policy (BFPP)</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="CFS.html">Climate Finance and Sustainability (CFS)</a></li>
+                            <li><a class="dropdown-item" href="CFS.php">Climate Finance and Sustainability (CFS)</a></li>
                             <!--<li><hr class="dropdown-divider"></li>
                           <li><a class="dropdown-item" href="SGDPI.html">Smart Governance and Digital Public Infrastructure (SGDPI)</a></li>-->
                           
@@ -162,9 +164,9 @@ html{
                             Electrical Engineering (EE)
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="AIML.html">Artifical Intelligence and Machine Learning (AIML)</a></li>
+                            <li><a class="dropdown-item" href="AIML.php">Artifical Intelligence and Machine Learning (AIML)</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="NGWT.html">Next Generation Wireless Technologies (NGWT/COMM)</a></li>
+                            <li><a class="dropdown-item" href="NGWT.php">Next Generation Wireless Technologies (NGWT/COMM)</a></li>
                             
                         </ul>
                     </li>
@@ -177,13 +179,13 @@ html{
                             
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="DSBA.html">Data Science and Business Analytics (DSBA)</a></li>
+                            <li><a class="dropdown-item" href="DSBA.php">Data Science and Business Analytics (DSBA)</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="FTM.html">Financial Technology and Management (FTM)</a></li>
+                            <li><a class="dropdown-item" href="FTM.php">Financial Technology and Management (FTM)</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="PSRF.html">Power Sector Regulation, Economics and Finance (PSRF)</a></li>
+                            <li><a class="dropdown-item" href="PSRM.php">Power Sector Regulation, Economics and Management (PSRM)</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="QFRM.html">Quantitative Finance and Risk Management (QFRM)</a></li>
+                            <li><a class="dropdown-item" href="QFRM.php">Quantitative Finance and Risk Management (QFRM)</a></li>
                         </ul>
                     </li>
                 </li>
@@ -194,7 +196,7 @@ html{
                             Sustainable Energy Engineering (SEE) 
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="REEM.html">Renewable Energy and e-Mobility (REEM)</a></li>
+                            <li><a class="dropdown-item" href="REEM.php">Renewable Energy and e-Mobility (REEM)</a></li>
                             
                         </ul>
                     </li>
@@ -213,22 +215,19 @@ html{
               <b>ACADEMICS</b>
             </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="academics_calendar.html">Academic Calendar</a></li>
+                    <li><a class="dropdown-item" href="academic_calender.php">Academic Calendar</a></li>
                     <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="eMasters-Student-Handbook.html">Student Handbook </a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="on_going_timetable.html">Ongoing Timetable </a></li>
+                    <li><a class="dropdown-item" href="on_going_timetable.php">Ongoing Timetable </a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="on_going_exam_schedule.html" > <img src="img/new_icon3.gif" style="border: 0; width: 30px; height: 35px;" >Exam Schedule </a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href=" https://oaacad.iitk.ac.in/emasgsiitk/"> <img src="img/new_icon3.gif" style="width: 30px; height: 35px;" >Online Grade Submission  </a></li>
-
-                
+                    <li><a class="dropdown-item" href="on_going_exam_schedule.php" > Exam Schedule- Q2_2024-25</a></li>
+                    
                 </ul>
           </li>
           &nbsp;&nbsp;&nbsp;
           <li class="nav-item" style="color: black;">
-            <a class="nav-link" href="form.html" >
+            <a class="nav-link" href="form.php" >
              <b>FORMS</b>
             </a>
                 
@@ -242,24 +241,20 @@ html{
           &nbsp;&nbsp;&nbsp;
 
           <li class="nav-item" style="color: black;">
-            <a class="nav-link" href="FAQ.html" >
+            <a class="nav-link" href="FAQ.php" >
              <b>FAQ</b>
             </a>
                 
           </li>
           &nbsp;&nbsp;&nbsp;
           <li class="nav-item" style="color: black;">
-            <a class="nav-link" href="contact.html" >
+            <a class="nav-link" href="contact.php" >
              <b>CONTACT US</b>
             </a>
                 
           </li>
           &nbsp;&nbsp;&nbsp;
-              <li class="nav-item">
-               <a class="nav-link" href="index1.html" style="color: white; background-color: black; padding: 8px 16px; border-radius: 5px; font-weight: bold;">
-               FOR NEW STUDENTS
-               </a>
-             </li>
+              
            </ul>
            </div>
         </div>
@@ -269,10 +264,11 @@ html{
 <ul class="nav justify-content-end">
   
   <li class="nav-item">
-    <a class="nav-link" href="#">FOR NEW STUDENTS</a>
+    <a class="nav-link" href="index1.php" style="color: white; background-color: rgb(38, 80, 100); padding: 8px 16px; border-radius: 5px; font-weight: bold;">FOR NEW STUDENTS</a>
   </li>
+  &nbsp;&nbsp;&nbsp;
   <li class="nav-item">
-    <a class="nav-link" href="#">FOR ENROLLED STUDENTS</a>
+    <a class="nav-link" href="Form/index.php" style="color: white; background-color: rgb(38, 80, 100); padding: 8px 16px; border-radius: 5px; font-weight: bold;">FOR ENROLLED STUDENTS</a>
   </li>
   
 </ul>
@@ -288,9 +284,15 @@ html{
       <div class="team-item">
        <nav class="breadcrumb-nav" aria-label="breadcrumb">
          <marquee behavior="scroll" direction="left">
+          <!--
           <img src="img/new_icon3.gif">
-           <a href="AHEP.html">
+           <a href="#">
            New programme launched for eMaster Programme in IITK - Applied Health Economics and Policy (AHEP)  offered by Economic Sciences (ECOS)
+           </a>
+          -->
+           <img src="img/new_icon3.gif">
+           <a href="#">
+           Registration date is preponed from 5th Dec,2024 to 15th Dec,2024 
            </a>
        </marquee>
      </nav>
@@ -298,51 +300,8 @@ html{
     </div>
 <div><br></div>
        
-<!-- LMS and Registration Cards -->
-<div class="container">
-  <div class="row justify-content-center">
-    <!-- First Card -->
-    <div class="col-lg-5 col-md-6 mb-3">
-      <div class="card">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="img/LMS.png" style="max-width: 80%; max-height: 100px; margin: auto; margin-top:20px; display: block;" class="img-fluid rounded-start" alt="LMS Image">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body text-md-start text-center">
-              <h5 class="card-title">LMS</h5>
-			  <p class="card-text">This is a wider card with supporting text below</p>
-              <div class="d-md-flex d-flex justify-content-md-start justify-content-center">
-                <a href="#" class="btn btn-primary">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Second Card -->
-    <div class="col-lg-5 col-md-6 mb-3">
-      <div class="card">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="img/registration.png" style="max-width: 80%; max-height: 100px; margin: auto; margin-top:20px; display: block;" class="img-fluid rounded-start" alt="Registration Image">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body text-md-start text-center">
-              <h5 class="card-title">Registration</h5>
-			  <p class="card-text">This is a wider card with supporting text below</p>
-              <div class="d-md-flex d-flex justify-content-md-start justify-content-center">
-                <a href="#" class="btn btn-primary">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-      
+
      
 
         
@@ -378,7 +337,7 @@ html{
       
             <div class="col-md-3">
               <div class="card">
-                <a href="circular.html" style="text-decoration: none;">
+                <a href="circular.php" style="text-decoration: none;">
                   <img src="img/Circular.jpg" class="card-img-top" style="max-height:10rem;width: 100px;" alt="...">
                   <div class="card-body">
                     <h5 class="card-title" style="color: black; font-family: roboto; font-size: 18px; font-weight: 600; text-align: center;">Circulars</h5>
@@ -389,7 +348,7 @@ html{
       
             <div class="col-md-3">
               <div class="card">
-                <a href="NewsEvent.html" style="text-decoration: none;">
+                <a href="NewsEvent.php" style="text-decoration: none;">
                   <img src="img/News.jpg" class="card-img-top" style="max-height:10rem;width: 100px;" alt="...">
                   <div class="card-body">
                     <h5 class="card-title" style="color: black; font-family: roboto; font-size: 18px; font-weight: 600; text-align: center;">News & Events</h5>
@@ -464,7 +423,7 @@ html{
                 <use xlink:href="#check-circle-fill" />
               </svg>
               <div>
-                <a href="Annual_Report.html" style="color: black;">Annual Report</a>
+                <a href="Annual_Report.php" style="color: black;">Annual Report</a>
               </div>
             </div>
 
@@ -473,7 +432,7 @@ html{
                 <use xlink:href="#check-circle-fill" />
               </svg>
               <div>
-                <a href="NEWS_Letter.html" style="color: black;">NewsLetter</a>
+                <a href="NEWS_Letter.php" style="color: black;">NewsLetter</a>
               </div>
             </div>
 
@@ -482,7 +441,7 @@ html{
                 <use xlink:href="#check-circle-fill" />
               </svg>
               <div>
-                <a href="pressrelease.html" style="color: black;">Press Release</a>
+                <a href="pressrelease.php" style="color: black;">Press Release</a>
               </div>
             </div>
 
@@ -491,7 +450,7 @@ html{
                 <use xlink:href="#check-circle-fill" />
               </svg>
               <div>
-                <a href="Social_media.html" style="color: black;">Social Media</a>
+                <a href="Social_media.php" style="color: black;">Social Media</a>
               </div>
             </div>
 
@@ -500,7 +459,7 @@ html{
                 <use xlink:href="#check-circle-fill" />
               </svg>
               <div>
-                <a href="testimonial.html" style="color: black;">Testimonial</a>
+                <a href="testimonial.php" style="color: black;">Testimonial</a>
               </div>
             </div>
           </div>
@@ -683,7 +642,7 @@ document.querySelectorAll('[id^="clickable-image"]').forEach(img => {
  <div class="card-body" style="background: url('img/Bgphoto_Alumni.jpg') no-repeat center center; background-size: cover; min-height: 30vh;">
    <h5 class="card-title">
      <center>
-       <a href="Alumni1.html" style="color: white;">
+       <a href="Alumni1.php" style="color: white;">
          <i class="fa fa-2x fa-globe mb-2" style="margin-top: 30px; color: white;"></i>
          <br>Alumni Network 
        </a>
@@ -698,7 +657,7 @@ document.querySelectorAll('[id^="clickable-image"]').forEach(img => {
                 <div class="card" >
                   <div class="card-body" style="background: url('img/bgphoto_career.jpg') no-repeat center center; background-size: cover; min-height: 30vh;">
         
-                      <h5 class="card-title"> <center><a href="placement.html" style="color: white;"><i class="fa fa-2x fa-globe  mb-2" 
+                      <h5 class="card-title"> <center><a href="placement.php" style="color: white;"><i class="fa fa-2x fa-globe  mb-2" 
                         style="margin-top: 30px; color: white;"></i><br>Career Enhancement</a>
                         </center> 
                       </h5>
@@ -963,7 +922,7 @@ document.querySelectorAll('[id^="clickable-image"]').forEach(img => {
                   </div>
                   <div class="modal-body">
                     <div class="card">
-                      <img src="img/scpm_graph.jpg" class="img-fluid" style="height:250px; width:100%;">
+                      <img src="img/SCPM_graph.webp" class="img-fluid" style="height:250px; width:100%;">
                     </div>
                   </div>
                   <div class="modal-footer">
@@ -1022,19 +981,23 @@ document.querySelectorAll('[id^="clickable-image"]').forEach(img => {
         </div>
         <div class="tab-pane fade" id="ECOS" role="tabpanel" aria-labelledby="ECOS-tab">
           <div class="row row-cols-1 row-cols-md-3 g-4">
+
+<!--
             <div class="col">
               <div class="card3" >
                 <div class="card3-body">
       
                     
-                    <!-- Button trigger modal -->
+                    <!-- Button trigger modal
+
+
                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
                       <img src="img/AHEP_graph.jpg"  class="img-fluid" 
-                style="max-width: 80%; height: auto;background-size: cover;">
+                       style="max-width: 80%; height: auto;background-size: cover;">
                     
                     </button>
                   
-                    <!-- Modal -->
+                    <!-- Modal
                     <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel3" aria-hidden="true">
                       <div class="modal-dialog">
                         <div class="modal-content">
@@ -1059,6 +1022,8 @@ document.querySelectorAll('[id^="clickable-image"]').forEach(img => {
                 </div>
               </div>
             </div>
+-->
+
             <div class="col">
               <div class="card4" >
                 <div class="card4-body">
@@ -1099,6 +1064,8 @@ document.querySelectorAll('[id^="clickable-image"]').forEach(img => {
                 </div>
               </div>
             </div>
+
+
             <div class="col">
               <div class="card5" >
                 <div class="card5-body" >
@@ -1136,19 +1103,21 @@ document.querySelectorAll('[id^="clickable-image"]').forEach(img => {
                 </div>
               </div>
             </div>
+
+<!--
             <div class="col">
               <div class="card6" >
                 <div class="card6-body">
       
                     
-                    <!-- Button trigger modal -->
+                    <!-- Button trigger modal 
                     <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop6">
                       <img src=""  class="img-fluid" 
                 style="max-width: 80%; height: auto;background-size: cover;">
                     
                     </button>
                   
-                    <!-- Modal -->
+                    <!-- Modal 
                     <div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel6" aria-hidden="true">
                       <div class="modal-dialog">
                         <div class="modal-content">
@@ -1173,6 +1142,8 @@ document.querySelectorAll('[id^="clickable-image"]').forEach(img => {
                 </div>
               </div>
             </div>
+-->
+
           </div>
         </div>
         <div class="tab-pane fade" id="EE" role="tabpanel" aria-labelledby="EE-tab">
@@ -1337,7 +1308,7 @@ document.querySelectorAll('[id^="clickable-image"]').forEach(img => {
                     
                     <!-- Button trigger modal -->
                     <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop11">
-                      <img src="img/psrf_graph.jpg"  class="img-fluid" 
+                      <img src="img/psrm_graph.PNG"  class="img-fluid" 
                 style="max-width: 80%; height: auto;background-size: cover;">
                     
                     </button>
@@ -1347,7 +1318,7 @@ document.querySelectorAll('[id^="clickable-image"]').forEach(img => {
                       <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel11">Power Sector Regulation, Economics and Finance</h5>
+                            <h5 class="modal-title" id="staticBackdropLabel11">Power Sector Regulation, Economics and Management</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> </button>
                           </div>
                           <div class="modal-body">
@@ -1651,11 +1622,10 @@ document.querySelectorAll('[id^="clickable-image"]').forEach(img => {
       <div class="row g-5">
           <div class="col-lg-3 col-md-6" >
               <h5 class="text-black mb-4"><strong>FACTS</strong></h5>
-              <a class="btn btn-link text-black-50" href="gallery.html"><i class="fa fa-archive me-3"></i><strong>Archive Gallery</strong></a><br>
-              <a class="btn btn-link text-black-50" href="Archive_programme.html"><i class="fas fa-user-check me-3"></i><strong>Registered Student</strong></a>
-              <a class="btn btn-link text-black-50" href="Archive_alumni.html"><i class="fa fa-graduation-cap me-3"></i><strong>Graduated Student</strong></a>
-              <a class="btn btn-link text-black-50" href="Terms and Conditions.html"><i class="fas fa-file-alt me-3"></i><strong>Terms and Conditions</strong></a>
-              <a class="btn btn-link text-black-50" href="Policies.html"><i class="	fas fa-shield-alt me-3"></i><strong>Policies</strong></a>
+              <a class="btn btn-link text-black-50" href="gallery.php"><i class="fa fa-archive me-3"></i><strong>Archive Gallery</strong></a><br>
+              
+              <a class="btn btn-link text-black-50" href="Terms.php"><i class="fas fa-file-alt me-3"></i><strong>Terms and Conditions</strong></a>
+              <a class="btn btn-link text-black-50" href="Policies.php"><i class="	fas fa-shield-alt me-3"></i><strong>Policies</strong></a>
           </div>
 
           <div class="col-lg-3 col-md-6">
@@ -1678,29 +1648,37 @@ document.querySelectorAll('[id^="clickable-image"]').forEach(img => {
 
           <div class="col-lg-3 col-md-6">
             <div class="contact-container">
-               <form action="https://api.web3forms.com/submit" method="POST">
+              <form action="https://api.web3forms.com/submit" method="POST">
                 <div>
                   <h5><strong>Message Us</strong></h5>
                    <hr>
-               </div>
+                </div>
 
-               <input type="hidden" name="access_key" value="1c0634ef-585e-49c9-9b5d-a3f8f29e1484">
+                <input type="hidden" name="access_key" value="864640d2-970c-4fc8-bce7-1cc92a1c2c63">
 
-              <div class="form-group mb-2">
-              <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
-              </div>
+                <div class="form-group mb-2">
+                <input type="text" name="Name" placeholder="Name" class="contact-inputs form-control" required>
+                </div>
 
-              <div class="form-group mb-2">
-              <input type="email" name="email" placeholder="IITK Email" class="contact-inputs" required>
-              </div>
+                <div class="form-group mb-2">
+                <input type="email" name="Email ID" placeholder="Email ID" class="contact-inputs form-control" required>
+                </div>
+                
+                <div class="form-group mb-2">
+                <input type="text" name="Phone Number" placeholder="Phone Number" class="contact-inputs form-control" required>
+                </div>
 
-              <div class="form-group mb-2">
-               <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
-             </div>
+                <div class="form-group mb-2">
+                <input type="text" name="Subject" placeholder="Subject" class="contact-inputs form-control" required></textarea>
+                </div>
 
-             <button type="submit" class="btn btn-success btn-block">Submit</button>
-           </form>
-       </div>
+                <div class="form-group mb-2">
+                <textarea name="Message" placeholder="Your Message" class="contact-inputs form-control" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-success btn-block">Submit</button>
+              </form>
+            </div>
         </div>
       </div>
   </div>

@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+html, body {
+    height: 100%;
+   
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 400;
+  
+  
+}
+
+/* Logo and Navbar –––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (max-width: 767.98px) {
+    /* Target only the second logo */
+    .right-logo .logo img {
+        margin-left: 0 !important; /* Remove the large margin */
+        transform: translateX(70px); /* Shift only the right logo to the right */
+    }
+}
+@media (max-width: 767.98px) {
+    .navbar-toggler {
+        border-color: white !important; /* Change border color of the toggle button to white */
+    }
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        /* Sets the hamburger icon lines to white */
+    }
+}
+
+.navbar {
+    background-color: #2d3e50; /* Navbar background color */
+}
+
+.navbar .nav-link,
+.navbar-brand,
+.navbar .dropdown-menu a {
+    color: white !important; /* Default text color */
+}
+
+.navbar .dropdown-menu {
+    background-color: #2d3e50 !important; /* Keep dropdown background same as navbar */
+    border: none;
+    box-shadow: none; /* Remove any default Bootstrap shadow */
+}
+
+/* Hover Text Color for Navbar Links and Dropdown Items */
+
+.navbar .nav-link:hover,
+.navbar-brand:hover,
+.navbar .dropdown-menu a:hover {
+    color: #3ca5ac !important; /* Text color on hover */
+}
+
+/* Dropdown Styling */
+.dropdown .dropdown-menu {
+    display: none;
+    width: max-content;
+   
+}
+
+.dropdown:hover > .dropdown-menu,
+.dropend:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0.125em;
+    margin-left: 0.125em;
+    background-color: #2d3e50 !important; /* Ensure background stays consistent */
+    transition: opacity 0.9s ease-in-out;
+    transition-duration: 60s; /* Hover time */
+    min-width: 100%;
+    padding-right: 10px;
+}
+
+@media screen and (min-width: 769px) {
+    .dropend:hover > .dropdown-menu {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        margin-left: 0.125em;
+    }
+}
+/* Sticky top –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  /* Ensure that there is no overflow on the body and html */
+  html, body {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  /* Make sure the sticky navbar stays on top */
+  .sticky-top {
+    z-index: 1030; /* Higher than other elements */
+  }
+
+  /* Optional: Adjust spacing to avoid overlap with content */
+  .content {
+    margin-top: 80px; /* Adjust to match navbar height */
+  }
+
+  /* Equal height row fix */
+  .row-equal-height {
+    display: flex;
+  }
+  .col-equal-height {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+
+/* Footer –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container-fluid.footer {
+    background-color: #2d3e50; /* Footer background color */
+    color: white !important; /* Ensure all text in the footer is white */
+}
+
+/* Apply white text color to specific elements inside the footer */
+.container-fluid.footer a,
+.container-fluid.footer p,
+.container-fluid.footer h5 {
+    color: white !important; /* Override any other styles */
+}
+
+/* Input styles */
+.contact-inputs {
+    width: 250px;
+    height: 30px;
+    color: #2d3e50; /* Input text color */
+}
+
+.contact-inputs[type="textarea"] {
+    height: 50px;
+}
+
+/* Button styles */
+.btn-success.btn-block {
+    background-color: #2d3e50; /* Button background */
+    color: white !important; /* Ensure button text is white */
+}
+
+/* Marquee
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .team-item {
+    margin-top: 1%;
+    background-color: #2d3e50;
+    padding: 1px;
+    height: 50px;
+    border-radius: 8px;
+    max-width: 100%;
+  }
+  
+  .breadcrumb-nav marquee {
+    padding: 7px;
+    margin-top: 2px;
+    color: white;
+  }
+  
+  .breadcrumb-nav img {
+    border: 0;
+    width: 30px;
+    height: 35px;
+  }
+  
+  .breadcrumb-nav a {
+    text-decoration: none;
+    color: inherit;
+  }
+/* Programmes page
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  /* Progrmme header
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  :root {
+    --main-heading-color: #2d3e50;
+    --btn-background-color: #2d3e50;
+    --btn-text-color: white;
+}
+
+/* Apply the styles */
+.heading-color {
+    color: var(--main-heading-color);
+    font-size:34px;
+    font-weight: bold;
+}
+
+
+
+.btn-custom {
+    background-color: var(--btn-background-color);
+    color: var(--btn-text-color);
+    margin-right: -80px;
+}
+  /* Progrmme accordians
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .card-custom {
+    background-color: #3ca5ac;
+}
+
+.accordion-button-custom {
+    background-color: rgb(238, 247, 248);
+}
+.custom-card-bg {
+    background-color: #3ca5ac;
+}
+
+.custom-button-bg {
+    background-color: rgb(238, 247, 248);
+}
+.custom-background {
+    background-color: rgb(238, 247, 248);
+  }
+
+/* Progrmme student profiles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  
+/* Custom CSS for responsive layout */
+.icon-container {
+    padding: 20px; /* You can customize this value if needed */
+}
+
+.icon-color {
+    color: #2d3e50;
+}
+
+.custom-button {
+    margin-left: -70px; /* Customize based on your button placement needs */
+    margin-top: 10px;
+}
+
+.custom-button:nth-child(3) {
+    margin-left: -40px;
+}
+
+.btn:hover {
+    background-color: #3ca5ac !important;
+}
+
+/* Additional customizations for responsiveness */
+@media (max-width: 768px) {
+    .icon-container {
+        padding: 10px; /* Adjust for smaller screens */
+    }
+    
+    .custom-button {
+        margin-left: 0; /* Reset margin for smaller screens */
+        margin-top: 20px; /* Adjust margin-top for smaller screens */
+    }
+
+    .custom-button:nth-child(3) {
+        margin-left: 0; /* Reset margin for the third button on smaller screens */
+    }
+}
+
+/* Progrmme BFPP buttons
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .custom-card {
+    border-radius: 8px;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  
+  .custom-header {
+    background-color: #3ca5ac;
+  }
+  
+/*Image -slider-------------------------------*/
+
+.carousel-control-prev{
+    background-color: transparent;
+}
+
+.carousel-control-next{
+     background-color: transparent;
+    float: right;
+}
+.carousel-control-next-icon{
+    background-color: #000;
+}
+.carousel-control-prev-icon{
+background-color: #000;
+}
+.card:hover {
+    transform: scale(1.05); /* Example hover effect, you can adjust it */
+    transition: transform 0.3s ease; /* Smooth transition */
+    box-shadow: 0 2px 4px #e0edff; /* Example shadow effect, you can adjust it */
+  }
+
+
+/* Calender */
+
+.hero{
+    width: 100%;
+    height: 100%;
+    background: lightblue;
+    position:relative;
+}
+#calender{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/*timetable*/
+
+
+.bg-light-gray {
+    background-color: #f7f7f7;
+}
+.table-bordered thead td, .table-bordered thead th {
+    border-bottom-width: 2px;
+}
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+.table-bordered td, .table-bordered th {
+    border: 1px solid #dee2e6;
+}
+
+
+.bg-sky.box-shadow {
+    box-shadow: 0px 5px 0px 0px #00a2a7
+}
+
+.bg-orange.box-shadow {
+    box-shadow: 0px 5px 0px 0px #af4305
+}
+
+.bg-green.box-shadow {
+    box-shadow: 0px 5px 0px 0px #4ca520
+}
+
+.bg-yellow.box-shadow {
+    box-shadow: 0px 5px 0px 0px #dcbf02
+}
+
+.bg-pink.box-shadow {
+    box-shadow: 0px 5px 0px 0px #e82d8b
+}
+
+.bg-purple.box-shadow {
+    box-shadow: 0px 5px 0px 0px #8343e8
+}
+
+.bg-lightred.box-shadow {
+    box-shadow: 0px 5px 0px 0px #d84213
+}
+
+
+.bg-sky {
+    background-color: #02c2c7
+}
+
+.bg-orange {
+    background-color: #e95601
+}
+
+.bg-green {
+    background-color: #5bbd2a
+}
+
+.bg-yellow {
+    background-color: #f0d001
+}
+
+.bg-pink {
+    background-color: #ff48a4
+}
+
+.bg-purple {
+    background-color: #9d60ff
+}
+
+.bg-lightred {
+    background-color: #ff5722
+}
+
+.padding-15px-lr {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.padding-5px-tb {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.margin-10px-bottom {
+    margin-bottom: 10px;
+}
+.border-radius-5 {
+    border-radius: 5px;
+}
+
+.margin-10px-top {
+    margin-top: 10px;
+}
+.font-size14 {
+    font-size: 14px;
+}
+
+.text-light-gray {
+    color: #d6d5d5;
+}
+.font-size13 {
+    font-size: 13px;
+}
+
+.table-bordered td, .table-bordered th {
+    border: 1px solid #dee2e6;
+}
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+.carousel-control-prev{
+    background-color: transparent;
+}
+
+.carousel-control-next{
+     background-color: transparent;
+    float: right;
+}
+.carousel-control-next{
+    background-color: #000;
+}
+.carousel-control-prev{
+background-color: #000;
+}
+@media screen and (min-width:769px){
+    .dropend:hover > .dropdown-menu{
+        position: absolute;
+        top: 0;
+        left: 100%;
+        margin-left: .125em;
+    }
+}
+
+/*timeline*/
+
+:root {
+    --white: #fff;
+    --black: #323135;
+    --crystal: #a8dadd;
+    --columbia-blue: #cee9e4;
+    --midnight-green: #01565b;
+    --yellow: #e5f33d;
+    --timeline-gradient: rgba(206, 233, 228, 1) 0%, rgba(206, 233, 228, 1) 50%,
+      rgba(206, 233, 228, 0) 100%;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  a {
+    color: inherit;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  body {
+    font: normal 16px/1.5 "Inter", sans-serif;
+    background: var(--columbia-blue);
+    color: var(--black);
+    margin-bottom: 50px;
+  }
+  
+  /* .section SECTION
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  
+  .section {
+    padding: 50px 0;
+  }
+  
+  .section .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .section h1 {
+    font-size: 2.5rem;
+    line-height: 1.25;
+  }
+  
+  .section h2 {
+    font-size: 1.3rem;
+  }
+  
+  /* TIMELINE
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .horizontal-timeline .items {
+    border-top: 4px solid rgb(4, 89, 169);
+  }
+  
+  .horizontal-timeline .items .items-list {
+    display: block;
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+    margin-right: 0;
+  }
+  
+  .horizontal-timeline .items .items-list:before {
+    content: "";
+    position: absolute;
+    height: 36px;
+    border-right: 2px dashed rgb(4, 89, 169);
+    top: 0;
+  }
+  
+  .horizontal-timeline .items .items-list .event-date {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    width: 75px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    padding-top: 8px;
+  }
+  
+  @media (min-width: 1140px) {
+    .horizontal-timeline .items .items-list {
+      display: inline-block;
+      width: 24%;
+      padding-top: 10px;
+    }
+  
+    .horizontal-timeline .items .items-list .event-date {
+      top:-40px;
+}
+
+  }
+   /* PICDL message and annual report section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .card, .card2 {
+    height: 100%;
+}
+.row-equal-height {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-equal-height {
+    display: flex;
+    flex-direction: column;
+}
+.card-body {
+    flex: 1;
+}
+.alert {
+    margin-bottom: 1rem; /* Added margin to ensure spacing between alerts */
+}
+/* Gallery
+
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .gallery-container {
+    text-align: center;
+    margin-left: 100px; /* Adjust the value as needed */
+    margin-right: 100px; /* Adjust the value as needed */
+}
+
+.gallery-container h2 {
+    color: black;
+}
+
+.gallery-container .img-fluid {
+    height: 200px;
+    width: 100%;
+}
+
+.gallery-container .modal-title {
+    font-weight: bold;
+}
+
+.gallery-container .modal-body img {
+    width: 100%;
+}
